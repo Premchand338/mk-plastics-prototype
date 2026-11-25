@@ -3,7 +3,7 @@
 // Needs Playwright: npm i -D playwright && npx playwright install chromium
 const {chromium}=require('playwright');const path=require('path');
 (async()=>{const file=path.resolve(process.argv[2]||path.join(__dirname,'..','index.html'));
- const b=await chromium.launch();const out=[];
+ const b=await chromium.launch(process.env.PW_CHROMIUM?{executablePath:process.env.PW_CHROMIUM}:{});const out=[];
  for(const [w,tag] of [[1366,'desktop'],[390,'phone']]){
   const ctx=await b.newContext({viewport:{width:w,height:900}});await ctx.route(/fonts\.|qrcode/,r=>r.abort());
   const p=await ctx.newPage();const errs=[];p.on('pageerror',e=>errs.push(e.message));

@@ -34,6 +34,7 @@ css/
   02-v11-ui.css            tap inputs: chips, toggles, colour swatches, steppers
   03-v12-dashboard.css     admin home dashboard + "Dhyan do" bell
   04-v13.css               raw material by line, shapes, frames per packet
+  05-v14.css               order slip (Section 1)
 js/
   00-images.js             product photos (base64) — isse mat chhedo
   01-core.js               state, helpers, render, saare screens, modals, login, guide
@@ -45,9 +46,13 @@ js/
   07-v11-ui-layer.js       tap inputs (purane fields ke upar, logic same)
   08-v12-dashboard-bell.js admin dashboard + bell
   09-v13-owner-changes.js  line-wise raw material, shapes, P2, frames per packet
+  10-v14-order-slip.js     order slip: slip no. series, kai rang, transport, priority, party-wise, bill par rate
   99-boot.js               app start
 tools/build.js             sab kuch ek single HTML file mein jodta hai (dist/)
+tools/release.js           build + releases/<version>/ folder
 tests/smoke.js             poora flow chalake numbers check karta hai
+tests/slip.js              Section 1 (order slip) ke checks
+releases/                  har section ki shareable file + notes + screenshots
 docs/                      client review checklist + owner ke registers (CSV)
 CLAUDE.md                  Claude Code ke liye project notes
 ```

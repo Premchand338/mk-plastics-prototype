@@ -9,14 +9,16 @@ Order ab owner ki slip book jaisa bane: ek slip, ek number, kai rang.
 
 > Asar: order ka data badlega (ek line mein kai rang + quantity), order number series, orders list ki sorting, bill screen par rate.
 
-- [ ] **1.1 Order form slip jaisa ho** — Fields: Slip/Order No, Date, Party, Item name (Moti ya koi aur item), Size, Colour, Quantity (packets), Transport, Rate/deal, Sign. _(source: V1 · 0:00–0:46, P4)_
-- [ ] **1.2 Ek slip mein kai rang, har rang ki alag quantity** — Jaise 3mm Moti: Rani Gulabi 200, Green 200, Maroon 200 packets, ek hi order number par. _(source: V1 · 0:23–0:29, P4)_
-- [ ] **1.3 Slip number series** — Number book se match kare: abhi 223 hai toh agla 224, phir 225. Start number owner set kar sake. _(source: V1 · 0:43–0:51, P4)_
-- [ ] **1.4 Priority list: pehla order pehle** — 2–3 slips aayein toh sabse purana slip number upar; coating task isi kram mein. _(source: V1 · 0:51–1:00)_
-- [ ] **1.5 Transport field** — Kahan se kahan: jaise Bhiwandi se Rajkot. _(source: V1 · 0:29–0:41, P4)_
-- [ ] **1.6 Naye rang list mein** — Rani Gulabi aur Green SR list mein nahi hain; jodo (Maroon pehle se hai). _(source: P4)_
-- [ ] **1.7 Owner tab: order vs bana hua** — Har party ka order: 200 packet diya, kitne bane. Pura hone par "Ready to dispatch". _(source: V11 · 0:00–0:24)_
-- [ ] **1.8 Invoice par rate daalna** — Dispatch ke baad invoice; rate aur baaki details owner invoice ke time daale, bill usi se bane. _(source: V11 · 0:24–0:44)_
+- [x] **1.1 Order form slip jaisa ho** — Fields: Slip/Order No, Date, Party, Item name (Moti ya koi aur item), Size, Colour, Quantity (packets), Transport, Rate/deal, Sign. _(source: V1 · 0:00–0:46, P4)_
+- [x] **1.2 Ek slip mein kai rang, har rang ki alag quantity** — Jaise 3mm Moti: Rani Gulabi 200, Green 200, Maroon 200 packets, ek hi order number par. _(source: V1 · 0:23–0:29, P4)_
+- [x] **1.3 Slip number series** — Number book se match kare: abhi 223 hai toh agla 224, phir 225. Start number owner set kar sake. _(source: V1 · 0:43–0:51, P4)_
+- [x] **1.4 Priority list: pehla order pehle** — 2–3 slips aayein toh sabse purana slip number upar; coating task isi kram mein. _(source: V1 · 0:51–1:00)_
+- [x] **1.5 Transport field** — Kahan se kahan: jaise Bhiwandi se Rajkot. _(source: V1 · 0:29–0:41, P4)_
+- [x] **1.6 Naye rang list mein** — Rani Gulabi aur Green SR list mein nahi hain; jodo (Maroon pehle se hai). _(source: P4)_
+- [x] **1.7 Owner tab: order vs bana hua** — Har party ka order: 200 packet diya, kitne bane. Pura hone par "Ready to dispatch". _(source: V11 · 0:00–0:24)_
+- [x] **1.8 Invoice par rate daalna** — Dispatch ke baad invoice; rate aur baaki details owner invoice ke time daale, bill usi se bane. _(source: V11 · 0:24–0:44)_
+
+> **Status:** v14.1 mein bana (25 Nov) · `releases/v14.1-order-slip/` · 1.8 mein rate bill ke time; bill → dispatch ka kram Q11 tak wahi.
 
 ## 2. Karigar ko pirai ke liye bhejna
 
@@ -118,6 +120,7 @@ Owner khud test karega.
 - [ ] **Q8.** Dhaga g/kg kul wazan (dhaage ke saath) par lagega ya sirf maal ke wazan par? _(V6 · 0:19–0:36)_
 - [ ] **Q9.** Contractor ke workers kaun hain (machine operator, packing, karigar)? Mahina hamesha 30 din ka? _(V13 · 0:00–0:20)_
 - [ ] **Q10.** Rate: slip par deal price likhte ho aur invoice par bhi; dono rakhein ya sirf invoice par? _(V1 · 0:31, V11 · 0:35–0:44)_
+- [ ] **Q11.** V11 mein "dispatch ke baad invoice" bola; v9 mein "pehle bill, phir dispatch" tha. Abhi pehle bill, stock dispatch par minus. Kaunsa sahi? _(V11 · 0:24–0:44)_
 
 ## Hisaab (owner ke examples)
 
