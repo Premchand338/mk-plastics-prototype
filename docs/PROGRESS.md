@@ -44,6 +44,8 @@ Last updated: 25 Nov 2026 · Branch: `claude/bold-pasteur-hc1dru` · Checklist: 
   - **PDF:** "PDF download" = browser ka print → Save as PDF (prototype mein server nahi). WhatsApp: message + invoice summary taiyaar khulega, PDF haath se attach.
   - **Dispatch screen par do option (customizable):** "Abhi bill banao" (rate bharo → turant invoice) ya **"Bill baad mein"** (sirf dispatch, rate baad mein). Default option Settings se owner chune; har dispatch par badal bhi sakte ho.
   - "Bill baad mein" wale dispatch → Orders mein "Bill banana baaki" list → owner final rate bhare → invoice banao (dekho · PDF · WhatsApp). Din ki limit (default 2) ke baad bell mein alert.
+  - **Tareekh:** invoice par **dispatch ki tareekh** chhape; system mein **bill banne ki tareekh** alag save ho (report / log ke liye).
+  - **Alag bill:** jodna nahi. Har dispatch ka apna bill, aur do orders kabhi ek bill mein nahi.
   - **Sirf owner (admin)** dispatch kar sakta hai aur bill bana sakta hai; staff ko yeh buttons nahi dikhenge.
   - Credit limit: dispatch par rokna ya sirf bill par warning: **owner ne abhi tay nahi kiya**, isliye setting rakho (default: warning).
 - Q10 → slip + bill dono par rate (jaisa hai).
