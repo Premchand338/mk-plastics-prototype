@@ -1,6 +1,6 @@
 # CLAUDE.md — MK Plastics prototype
 
-Clickable prototype of an inventory + production app for MK Plastics / Beads Bazaar (plastic bead maker, Bhiwandi). Owner: Zahid bhai. Consultant: Premchand. UI language is Hinglish by default, with Hindi (Devanagari) and English toggles.
+Clickable prototype of an inventory + production app for MK Plastics / Beads Bazaar (plastic bead maker, Bhiwandi). Owner: Mahebub bhai (father); business run by his son Zahid bhai, who gives the reviews. Consultant: Premchand. UI language is Hinglish by default, with Hindi (Devanagari) and English toggles.
 
 ## Stack and how it runs
 

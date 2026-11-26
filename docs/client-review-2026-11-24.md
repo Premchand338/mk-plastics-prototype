@@ -121,7 +121,7 @@ Abhi baaki: Q2 (1½ / 2 Super rate list mein?), Q3 (handwriting values), Q4 (all
 - [ ] **Q6.** Coating task haath se kaise likhte ho, woh message (saare fields) bhejo. _(V8 · 0:27–0:46)_
   **Status (26 Nov):** message abhi nahi aaya. Yaad dilana hai.
 - [x] **Q7.** Slip par "Mahebub Bhai" aur "Tausit/Tausif" dono hain: karigar kaun, contractor kaun? _(P3, V2 · 0:11–0:20)_
-  **Jawab (26 Nov):** Mahebub Bhai = MK Plastics ke asli owner ka naam (Zahid bhai se confirm: dono ek hi?). Isliye Tausif = karigar.
+  **Jawab (26 Nov):** Mahebub Bhai = Zahid bhai ke walid (father), MK Plastics ke owner; Zahid bhai = beta, business chalate hain. Slip par Mahebub Bhai = owner ki taraf se, Tausif = karigar.
 - [x] **Q8.** Dhaga g/kg kul wazan (dhaage ke saath) par lagega ya sirf maal ke wazan par? _(V6 · 0:19–0:36)_
   **Jawab (26 Nov):** kul wazan (dhaage ke saath) par. Dhaga = kul kg × g/kg, maal = kul − dhaga.
 - [x] **Q9.** Contractor ke workers kaun hain (machine operator, packing, karigar)? Mahina hamesha 30 din ka? _(V13 · 0:00–0:20)_
@@ -129,7 +129,7 @@ Abhi baaki: Q2 (1½ / 2 Super rate list mein?), Q3 (handwriting values), Q4 (all
 - [x] **Q10.** Rate: slip par deal price likhte ho aur invoice par bhi; dono rakhein ya sirf invoice par? _(V1 · 0:31, V11 · 0:35–0:44)_
   **Jawab (26 Nov):** dono. Slip par deal rate (optional) + bill par final rate. v14.1 mein aisa hi hai.
 - [x] **Q11.** V11 mein "dispatch ke baad invoice" bola; v9 mein "pehle bill, phir dispatch" tha. Abhi pehle bill, stock dispatch par minus. Kaunsa sahi? _(V11 · 0:24–0:44)_
-  **Jawab (26 Nov):** pehle dispatch, phir bill. ⚠️ Flow badalna hai: dispatch (gaadi + packet, stock minus) → phir owner rate daal ke invoice.
+  **Jawab (26 Nov):** pehle dispatch, phir bill. ⚠️ Flow badalna hai: dispatch (gaadi + packet, stock minus) → usi waqt invoice: **dekho, PDF download, WhatsApp share** buttons. Dispatch ho gaya par bill nahi bana toh owner ke screen par "Bill banana baaki" dikhe (din ki limit editable, default 2 din). Credit limit dispatch par rokna ya bill par warning: abhi tay nahi.
 
 ## Hisaab (owner ke examples)
 

@@ -37,10 +37,13 @@ Last updated: 25 Nov 2026 · Branch: `claude/bold-pasteur-hc1dru` · Checklist: 
 
 ## Owner ke jawab (26 Nov)
 
-- **Q11 → pehle dispatch, phir bill.** v14.1 abhi "pehle bill" hai: agla kaam isko palatna (Section 1 fix, v14.2). Stock dispatch par hi minus (CLAUDE rule 5 theek). Smoke test ka order (bill → dispatch) badlega: wajah = owner ka Q11 jawab.
+- **Q11 → pehle dispatch, phir bill.** v14.1 abhi "pehle bill" hai: agla kaam isko palatna (v14.2). Stock dispatch par hi minus (CLAUDE rule 5 theek). Smoke test ka order (bill → dispatch) badlega: wajah = owner ka Q11 jawab.
+  - Dispatch ke turant baad invoice ke buttons: **Invoice dekho · PDF download · WhatsApp share**.
+  - Dispatch hua, bill nahi bana → owner home + bell par "Bill banana baaki", din ki limit editable (default 2 din).
+  - Credit limit: dispatch par rokna ya sirf bill par warning: **owner ne abhi tay nahi kiya**, isliye setting rakho (default: warning).
 - Q10 → slip + bill dono par rate (jaisa hai).
 - Q1 → S.P./Sopo = Super, SS = Sujni, Semi F = Semi Flat.
-- Q7 → Mahebub Bhai = owner ka naam, Tausif = karigar.
+- Q7 → Mahebub Bhai = Zahid bhai ke father (owner), Zahid bhai = beta (business chalate hain). Tausif = karigar.
 - Q8 → dhaga kul wazan (dhaage ke saath) par.
 - Q9 → mahina = 30 din.
 - Baaki: Q2, Q3, Q4, Q5, Q6, Q9 (workers kaun).
