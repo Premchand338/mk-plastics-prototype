@@ -110,17 +110,26 @@ Owner khud test karega.
 
 ## Owner se sawaal (build se pehle confirm karo)
 
-- [ ] **Q1.** "S.P." / "Sopo" ka matlab Super hai? "SS" kaunsa maal (Sujni?) hai? "Semi F" kya hai? _(P1, P2)_
+Abhi baaki: Q2 (1½ / 2 Super rate list mein?), Q3 (handwriting values), Q4 (allowance list), Q5 (dhaga type per item), Q6 (coating task message), Q9 ka workers wala hissa.
+
+- [x] **Q1.** "S.P." / "Sopo" ka matlab Super hai? "SS" kaunsa maal (Sujni?) hai? "Semi F" kya hai? _(P1, P2)_
+  **Jawab (26 Nov):** S.P. / Sopo = Super, SS = Sujni, Semi F = Semi Flat.
 - [ ] **Q2.** 1½ aur 2 number S.P. rate list mein nahi hain. Inhe rate list mein jodna hai? _(P1)_
 - [ ] **Q3.** Handwriting confirm: 6 Semi dhaga 020 ya 021? 1½ S.P. dhaga 217 ya 247? 6 Munga moti 060 ya 080? 3 Semi ke do dhaga value (070, 080): kaunsa kis variant ka? _(P1, P2)_
 - [ ] **Q4.** Har item ka frames-per-packet allowance (8mm = 2.8 jaisa) ki list kab milegi? _(V10 · 3:40–3:50)_
 - [ ] **Q5.** Kis maal mein kaunsa dhaga type (1×3, 2×2, 3×3, 1×2) lagta hai? _(V6 · 1:26–1:32)_
 - [ ] **Q6.** Coating task haath se kaise likhte ho, woh message (saare fields) bhejo. _(V8 · 0:27–0:46)_
-- [ ] **Q7.** Slip par "Mahebub Bhai" aur "Tausit/Tausif" dono hain: karigar kaun, contractor kaun? _(P3, V2 · 0:11–0:20)_
-- [ ] **Q8.** Dhaga g/kg kul wazan (dhaage ke saath) par lagega ya sirf maal ke wazan par? _(V6 · 0:19–0:36)_
-- [ ] **Q9.** Contractor ke workers kaun hain (machine operator, packing, karigar)? Mahina hamesha 30 din ka? _(V13 · 0:00–0:20)_
-- [ ] **Q10.** Rate: slip par deal price likhte ho aur invoice par bhi; dono rakhein ya sirf invoice par? _(V1 · 0:31, V11 · 0:35–0:44)_
-- [ ] **Q11.** V11 mein "dispatch ke baad invoice" bola; v9 mein "pehle bill, phir dispatch" tha. Abhi pehle bill, stock dispatch par minus. Kaunsa sahi? _(V11 · 0:24–0:44)_
+  **Status (26 Nov):** message abhi nahi aaya. Yaad dilana hai.
+- [x] **Q7.** Slip par "Mahebub Bhai" aur "Tausit/Tausif" dono hain: karigar kaun, contractor kaun? _(P3, V2 · 0:11–0:20)_
+  **Jawab (26 Nov):** Mahebub Bhai = MK Plastics ke asli owner ka naam (Zahid bhai se confirm: dono ek hi?). Isliye Tausif = karigar.
+- [x] **Q8.** Dhaga g/kg kul wazan (dhaage ke saath) par lagega ya sirf maal ke wazan par? _(V6 · 0:19–0:36)_
+  **Jawab (26 Nov):** kul wazan (dhaage ke saath) par. Dhaga = kul kg × g/kg, maal = kul − dhaga.
+- [x] **Q9.** Contractor ke workers kaun hain (machine operator, packing, karigar)? Mahina hamesha 30 din ka? _(V13 · 0:00–0:20)_
+  **Jawab (26 Nov):** mahina hamesha 30 din (salary ÷ 30). Workers kaun hain: abhi baaki.
+- [x] **Q10.** Rate: slip par deal price likhte ho aur invoice par bhi; dono rakhein ya sirf invoice par? _(V1 · 0:31, V11 · 0:35–0:44)_
+  **Jawab (26 Nov):** dono. Slip par deal rate (optional) + bill par final rate. v14.1 mein aisa hi hai.
+- [x] **Q11.** V11 mein "dispatch ke baad invoice" bola; v9 mein "pehle bill, phir dispatch" tha. Abhi pehle bill, stock dispatch par minus. Kaunsa sahi? _(V11 · 0:24–0:44)_
+  **Jawab (26 Nov):** pehle dispatch, phir bill. ⚠️ Flow badalna hai: dispatch (gaadi + packet, stock minus) → phir owner rate daal ke invoice.
 
 ## Hisaab (owner ke examples)
 

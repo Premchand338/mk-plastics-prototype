@@ -7,7 +7,8 @@ Last updated: 25 Nov 2026 · Branch: `claude/bold-pasteur-hc1dru` · Checklist: 
 | Section | Checks | Status | Release | Code |
 |---|---|---|---|---|
 | 1 · Order slip | 1.1–1.8 | ✅ Done, owner test baaki | [v14.1](../releases/v14.1-order-slip/) · https://claude.ai/artifact/3b81iMAGmvTXbEhwSSz414 | `js/10-v14-order-slip.js`, `css/05-v14.css`, `tests/slip.js` |
-| 2 · Karigar ko pirai ke liye bhejna | 2.1–2.4 | ⏭ Next | – | – |
+| 1 fix · Dispatch → bill (Q11) | 1.8 | ⏭ Next (v14.2) | – | – |
+| 2 · Karigar ko pirai ke liye bhejna | 2.1–2.4 | Uske baad | – | – |
 | 3 · Karigar se wapas lena | 3.1–3.6 | Baaki | – | – |
 | 4 · Dhaga stock | 4.1–4.3 | Baaki | – | – |
 | 5 · Line routing + coating task form | 5.1–5.3 | Baaki (5.3 owner ke message ka intezaar, Q6) | – | – |
@@ -33,6 +34,16 @@ Last updated: 25 Nov 2026 · Branch: `claude/bold-pasteur-hc1dru` · Checklist: 
 - 2.3 "Bunch" = 1,200 moti (standard). Karigar se guchha/frame aata hai; app mein "Kitne bunch aaye" ki jagah guchha/frame. ⚠️ Smoke test karigar return mein `#rb` (bunch) bharta hai: field badla toh test update karna padega aur wajah likhni padegi.
 - 2.4 Naye items: No 6 B.H.L. (Big Hole), Semi F (Q1: Semi F kya hai?).
 - Karigar code: `karSendModal`, `karRecvModal`, `FORMS.karSend`, `FORMS.karRecv` (04-v8 + baad ke layers, sab files mein search karo).
+
+## Owner ke jawab (26 Nov)
+
+- **Q11 → pehle dispatch, phir bill.** v14.1 abhi "pehle bill" hai: agla kaam isko palatna (Section 1 fix, v14.2). Stock dispatch par hi minus (CLAUDE rule 5 theek). Smoke test ka order (bill → dispatch) badlega: wajah = owner ka Q11 jawab.
+- Q10 → slip + bill dono par rate (jaisa hai).
+- Q1 → S.P./Sopo = Super, SS = Sujni, Semi F = Semi Flat.
+- Q7 → Mahebub Bhai = owner ka naam, Tausif = karigar.
+- Q8 → dhaga kul wazan (dhaage ke saath) par.
+- Q9 → mahina = 30 din.
+- Baaki: Q2, Q3, Q4, Q5, Q6, Q9 (workers kaun).
 
 ## Khule sawaal (owner)
 
