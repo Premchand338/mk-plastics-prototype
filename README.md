@@ -50,6 +50,7 @@ js/
   11-v14-dispatch-bill.js  pehle dispatch, phir bill (abhi / baad mein), PDF, WhatsApp, bill setting
   12-v14-pirai.js          pirai spec (P2), challan par spec, frame / guchha se bunch (1,200 moti)
   13-v14-karigar-return.js karigar return slip (grade, dhaga g/kg, cut → waste) + Dhaga stock
+  14-v14-frames.js         packet se frame: exact (P2) + owner allowance, task target
   99-boot.js               app start
 tools/build.js             sab kuch ek single HTML file mein jodta hai (dist/)
 tools/release.js           build + releases/<version>/ folder
@@ -58,6 +59,7 @@ tests/slip.js              Section 1 (order slip) ke checks
 tests/dispatch.js          v14.2 dispatch → bill ke checks
 tests/pirai.js             Section 2 (pirai) ke checks
 tests/karigar-return.js    Section 3 + 4 (return slip, dhaga) ke checks
+tests/frames.js            Section 6 (packet se frame) ke checks
 releases/                  har section ki shareable file + notes + screenshots
 docs/                      client review checklist + owner ke registers (CSV)
 CLAUDE.md                  Claude Code ke liye project notes
@@ -90,7 +92,7 @@ npm install
 npx playwright install chromium
 npm test
 ```
-Poora flow chalta hai (inward → moulding → karigar → coating → order → bill → dispatch). Sahi hone par numbers yeh aane chahiye: auto packed **58**, rate **10.4**, bill **₹3,068**, ready stock **580 → 330**, koi error nahi.
+Poora flow chalta hai (inward → moulding → karigar → coating → order → bill → dispatch). Sahi hone par numbers yeh aane chahiye: auto packed **58**, rate **10.4**, bill **₹3,068**, ready stock **290 → 40**, koi error nahi (test khud check karta hai).
 
 ## Git (recommended)
 

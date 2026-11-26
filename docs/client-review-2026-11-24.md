@@ -74,11 +74,13 @@ Owner packets de, frames app nikale.
 
 > Asar: v13 ka "frames per packet" (poora number) badal kar register se nikla hisaab + owner allowance (2.8 jaisa decimal).
 
-- [ ] **6.1 Bunch = 1,200 moti, packet = packing × 1,200** — 8mm ki packing 4 bunch = 4 × 1,200 = 4,800 moti. _(source: V10 · 1:48–2:40)_
-- [ ] **6.2 Moti per frame register se** — 2 guchha × ladi × moti: 8mm = 2 × 18 × 50 = 1,800. _(source: V10 · 2:44–3:11, P2)_
-- [ ] **6.3 Exact frames per packet** — 4,800 ÷ 1,800 = 2.667; app khud nikale. _(source: V10 · 3:11–3:23)_
-- [ ] **6.4 Owner allowance per item** — Tooti ladi ke liye: 8mm = 2.8. Task: 100 packet × 2.8 = 280 frame. Owner har item ka allowance dega. _(source: V10 · 3:23–4:33)_
-- [ ] **6.5 Task mein target frames** — Jaise "2,060 frame ka target" saaf dikhe. _(source: V10 · 0:43–0:55)_
+- [x] **6.1 Bunch = 1,200 moti, packet = packing × 1,200** — 8mm ki packing 4 bunch = 4 × 1,200 = 4,800 moti. _(source: V10 · 1:48–2:40)_
+- [x] **6.2 Moti per frame register se** — 2 guchha × ladi × moti: 8mm = 2 × 18 × 50 = 1,800. _(source: V10 · 2:44–3:11, P2)_
+- [x] **6.3 Exact frames per packet** — 4,800 ÷ 1,800 = 2.667; app khud nikale. _(source: V10 · 3:11–3:23)_
+- [x] **6.4 Owner allowance per item** — Tooti ladi ke liye: 8mm = 2.8. Task: 100 packet × 2.8 = 280 frame. Owner har item ka allowance dega. _(source: V10 · 3:23–4:33)_
+- [x] **6.5 Task mein target frames** — Jaise "2,060 frame ka target" saaf dikhe. _(source: V10 · 0:43–0:55)_
+
+> **Status:** v14.5 mein bana (26 Nov) · `releases/v14.5-packets-frames/` · Q4 allowance sirf 8mm Semi = 2.8, baaki editable.
 
 ## 7. Daily production entry
 

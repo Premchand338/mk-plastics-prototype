@@ -56,3 +56,9 @@ a.btn{text-decoration:none}
 .dhc{display:grid;gap:3px;justify-items:start;padding:12px 14px;border:1px solid var(--line);border-radius:14px;min-width:0}
 .dhc b{font-size:20px;font-weight:600;font-variant-numeric:tabular-nums}
 .dhc.low{border-color:color-mix(in srgb,var(--warn) 45%,var(--line));background:color-mix(in srgb,var(--warn-soft) 45%,var(--surface))}
+/* ===== v14.5 · packets → frames (Section 6) ===== */
+#ctpki b{font-weight:600}
+#ctpki .warn14{color:var(--warn)}
+#ctpki .tg14{margin-top:2px;padding-top:4px;border-top:1px dashed color-mix(in srgb,var(--gold) 55%,var(--line));color:var(--ink)}
+.sumbox .tot14{font-size:15px;color:var(--gold-ink)}
+.tgt14{display:flex;align-items:flex-start;gap:6px;flex-wrap:nowrap;color:var(--ink)!important}.tgt14>svg{flex:none;margin-top:3px}.tgt14>span{min-width:0}

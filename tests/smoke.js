@@ -1,4 +1,5 @@
-// Smoke test: runs the full Pearl-line flow and prints the key numbers.
+// Smoke test: runs the full Pearl-line flow, prints the key numbers and fails if they change.
+// Expected: auto packed 58 · rate 10.4 · bill MK/26-27/0001 ₹3,068 · ready stock 290 → 40 bunch.
 // Usage: node tests/smoke.js [path-to-html]   (default: index.html)
 // Needs Playwright: npm i -D playwright && npx playwright install chromium
 const {chromium}=require('playwright');const path=require('path');
@@ -29,4 +30,9 @@ const {chromium}=require('playwright');const path=require('path');
   let overflow=false;for(const v of ['home','tasks','production','karigar','coating','dispatch','maal','stock','waste','products','orders','khaata','kharcha','reports','log','team','guide']){await p.evaluate(v=>{S.user='admin';S.view=v;closeModal();render()},v);if(await ov())overflow=v}
   await p.evaluate(()=>{S.view='home';render()});await c('[data-a=bell]');const bell=await p.evaluate(()=>!!document.querySelector('.bellw.open'));
   out.push({tag,autoOut,rate,inv,afterCoat,afterDisp,bell,overflow,errors:errs});await ctx.close()}
- await b.close();console.log(JSON.stringify(out,null,1));process.exit(out.some(o=>o.errors.length||o.overflow)?1:0)})();
+ await b.close();console.log(JSON.stringify(out,null,1));
+ // Expected (CLAUDE.md). v14.5: 1 frame of 3MM Semi = 6,000 moti (P2) = 5 bunch, not the old flat 10 → ready 290 → 40 (was 580 → 330).
+ const bad=out.flatMap(o=>[o.autoOut!=='58'&&'autoOut '+o.autoOut,o.rate!=='10.4'&&'rate '+o.rate,(o.inv[0]!=='MK/26-27/0001'||o.inv[1]!==3068)&&'bill '+o.inv,
+   !/\| 290 bunch$/.test(o.afterCoat)&&'ready after coating '+o.afterCoat,!/\| 40 bunch$/.test(o.afterDisp)&&'ready after dispatch '+o.afterDisp].filter(Boolean).map(x=>o.tag+': '+x));
+ if(bad.length)console.log('FAIL\n- '+bad.join('\n- '));
+ process.exit(out.some(o=>o.errors.length||o.overflow)||bad.length?1:0)})();
