@@ -9,8 +9,8 @@ Last updated: 26 Nov 2026 · Branch: `claude/bold-pasteur-hc1dru` · Checklist: 
 | 1 · Order slip | 1.1–1.8 | ✅ Done, owner test baaki | [v14.1](../releases/v14.1-order-slip/) · https://claude.ai/artifact/3b81iMAGmvTXbEhwSSz414 | `js/10-v14-order-slip.js`, `css/05-v14.css`, `tests/slip.js` |
 | 1 fix · Dispatch → bill (Q11) | 1.8 | ✅ Done, owner test baaki | [v14.2](../releases/v14.2-dispatch-bill/) | `js/11-v14-dispatch-bill.js`, `tests/dispatch.js` |
 | 2 · Karigar ko pirai ke liye bhejna | 2.1–2.4 | ✅ Done, owner test baaki | – | – |
-| 3 · Karigar se wapas lena | 3.1–3.6 | ⏭ Next | – | – |
-| 4 · Dhaga stock | 4.1–4.3 | ⏭ Next (Section 3 ke saath, v14.4) | – | – |
+| 3 · Karigar se wapas lena | 3.1–3.6 | ✅ Done (v14.4), owner test baaki | – | – |
+| 4 · Dhaga stock | 4.1–4.3 | ✅ Done (v14.4), owner test baaki | – | – |
 | 5 · Line routing + coating task form | 5.1–5.3 | Baaki (5.3 owner ke message ka intezaar, Q6) | – | – |
 | 6 · Packets → frames | 6.1–6.5 | Baaki (allowance list Q4) | – | – |
 | 7 · Daily production entry | 7.1–7.4 | Baaki | – | – |
@@ -20,20 +20,19 @@ Last updated: 26 Nov 2026 · Branch: `claude/bold-pasteur-hc1dru` · Checklist: 
 ## Process (har section ke liye same)
 
 1. Checklist ka section padho + source (V/P) + register CSV.
-2. Naya layer file: `js/1N-v14-<topic>.js` (agla: `13-v14-…`) (+ CSS agar chahiye), `index.html` mein `99-boot.js` se pehle. Data upgrade ho toh `initV14…()` ko extend karo / `seed()` wrap karo.
+2. Naya layer file: `js/1N-v14-<topic>.js` (agla: `14-v14-…`) (+ CSS agar chahiye), `index.html` mein `99-boot.js` se pehle. Data upgrade ho toh `initV14…()` ko extend karo / `seed()` wrap karo.
 3. Owner ke khule sawaal (Q1–Q11) ke values **guess nahi**: UI mein editable rakho.
 4. Section ka test: `tests/<topic>.js` (phone 390px + desktop), `package.json` ke `test` mein jodo.
 5. `PW_CHROMIUM=/opt/pw-browsers/chromium npm test` (cloud) / `npm test` (local). Smoke numbers same: 58 · 10.4 · ₹3,068 · 580 → 330.
 6. `node tools/release.js v14.N <slug>` → `RELEASE-NOTES.md`, `OWNER-TEST.md`, `screenshots/` (phone light + desktop dark, 2×) → `releases/README.md` mein row.
 7. Checklist mein `[x]` + status line, yeh file update, commit, push, link publish.
 
-## Section 3 ke liye notes (next)
+## Agle section ke notes
 
-- Return form (v8 `karRecvModal` + v14.3 frames wrapper in `js/12-v14-pirai.js`): slip jaisa (P3) · Date, Karigar (Tausif = karigar, Q7), Item, **Grade zaroori**, Kul wazan dhaage ke saath, **Cut**, Receiver (Salman).
-- Dhaga = kul wazan × g/kg (Q8: kul wazan par) · register `docs/register-dhaga-P1.csv` (34 lines, Q3 a/b/d unclear → editable). Abhi `S.threadKg` (0.02 kg/bunch) hai: hatana.
-- Stock: loose minus, threaded plus, dhaga stock minus (Section 4 ka DHAGA stock chahiye: 3 aur 4 saath karna behtar).
-- Cut → waste, usi grade mein (3.6).
-- Smoke test return mein `#rwt` 130.1 aur thread auto: numbers badal sakte hain → wajah likhni.
+- **Section 6 (packets → frames)** ab ready: 1 bunch = `S.cfg14.mpb` (1,200 moti), moti / frame = `mpf14(spec)` from `S.pirai`. v13 ka `fpp` (poora number) badal kar: exact frames / packet = packing × 1,200 ÷ moti/frame; owner allowance (8mm = 2.8, Q4) editable per item.
+- **Section 5**: 5.1 line routing (v8 mein lot line raw material se pehle se aata hai: check karo), 5.3 owner ka message chahiye (Q6).
+- **Section 7** Section 6 par tika hai (rejected bunch = frames × moti/frame − packets × moti/packet).
+- Code: v14.4 return form = v8 `karRecvModal` + wrappers in `12-v14-pirai.js` (frames) aur `13-v14-karigar-return.js` (slip, grade, dhaga, cut).
 
 ## Owner ke jawab (26 Nov)
 

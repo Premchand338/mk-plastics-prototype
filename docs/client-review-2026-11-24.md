@@ -39,12 +39,12 @@ Return entry bilkul karigar ki slip jaisi, aur dhaga apne aap alag ho.
 
 > Asar: return form ke fields, thread ka hisaab (0.02 kg/bunch hatega), loose / threaded / dhaga / waste chaaron stock.
 
-- [ ] **3.1 Return entry slip jaisi** — Date, Karigar (slip: Mahebub Bhai / Tausit), Item (3 No Semi), Grade, Kul wazan dhaage ke saath (40.400 kg), Cut (0.800 kg), Receiver (Salman). _(source: V2 · 0:00–0:36, V7 · 0:00–0:16, P3)_
-- [ ] **3.2 Grade zaroori (1st / 2nd / 3rd)** — Slip mein grade nahi likha tha ("gadbad"); app mein grade chune bina save na ho. _(source: V2 · 0:20–0:29)_
-- [ ] **3.3 Dhaga master (gram per kg)** — Har item ka 1 kg pirai mein kitna dhaga. Photo P1 ki 34 lines. _(source: V3 · 0:00–0:16, P1)_
-- [ ] **3.4 Dhaga apne aap minus** — Dhaga = kg × g/kg. Example: 1 kg @ 15 g → 985 g maal + 15 g dhaga; 11mm Semi 10 kg @ 12 g → 120 g. _(source: V6 · 0:09–0:38, V6 · 1:16–1:32)_
-- [ ] **3.5 Stock movement** — Loose (moulded) maal minus, threaded maal plus, dhaga stock minus. _(source: V6 · 1:34–1:51)_
-- [ ] **3.6 Cut waste mein, usi grade mein** — Cut = jo moti pir nahi sakti (hole band). Type-1 ka cut waste ke first grade section mein jaye. _(source: V2 · 0:36–1:24)_
+- [x] **3.1 Return entry slip jaisi** — Date, Karigar (slip: Mahebub Bhai / Tausit), Item (3 No Semi), Grade, Kul wazan dhaage ke saath (40.400 kg), Cut (0.800 kg), Receiver (Salman). _(source: V2 · 0:00–0:36, V7 · 0:00–0:16, P3)_
+- [x] **3.2 Grade zaroori (1st / 2nd / 3rd)** — Slip mein grade nahi likha tha ("gadbad"); app mein grade chune bina save na ho. _(source: V2 · 0:20–0:29)_
+- [x] **3.3 Dhaga master (gram per kg)** — Har item ka 1 kg pirai mein kitna dhaga. Photo P1 ki 34 lines. _(source: V3 · 0:00–0:16, P1)_
+- [x] **3.4 Dhaga apne aap minus** — Dhaga = kg × g/kg. Example: 1 kg @ 15 g → 985 g maal + 15 g dhaga; 11mm Semi 10 kg @ 12 g → 120 g. _(source: V6 · 0:09–0:38, V6 · 1:16–1:32)_
+- [x] **3.5 Stock movement** — Loose (moulded) maal minus, threaded maal plus, dhaga stock minus. _(source: V6 · 1:34–1:51)_
+- [x] **3.6 Cut waste mein, usi grade mein** — Cut = jo moti pir nahi sakti (hole band). Type-1 ka cut waste ke first grade section mein jaye. _(source: V2 · 0:36–1:24)_
 
 ## 4. Dhaga stock
 
@@ -52,9 +52,11 @@ Dhaga bhi inventory ka hissa ho.
 
 > Asar: naya stock section (DHAGA), inward / opening stock mein dhaga, alerts.
 
-- [ ] **4.1 Inventory mein Dhaga section** — Types: 1×3, 2×2, 3×3, 1×2 (alag grade/type). _(source: V6 · 0:38–1:00)_
-- [ ] **4.2 Item ke saath dhaga type** — Kis maal mein kaunsa dhaga lagta hai; owner batayega. _(source: V6 · 1:26–1:32)_
-- [ ] **4.3 Return par dhaga auto minus + alert** — Pirai entry se dhaga stock ghate; kam ho toh bell mein alert. _(source: V6 · 1:05–1:16)_
+- [x] **4.1 Inventory mein Dhaga section** — Types: 1×3, 2×2, 3×3, 1×2 (alag grade/type). _(source: V6 · 0:38–1:00)_
+- [x] **4.2 Item ke saath dhaga type** — Kis maal mein kaunsa dhaga lagta hai; owner batayega. _(source: V6 · 1:26–1:32)_
+- [x] **4.3 Return par dhaga auto minus + alert** — Pirai entry se dhaga stock ghate; kam ho toh bell mein alert. _(source: V6 · 1:05–1:16)_
+
+> **Status (3 + 4):** v14.4 mein bana (26 Nov) · `releases/v14.4-karigar-return-dhaga/` · Q3a/b/d + Q5 editable, guess nahi.
 
 ## 5. Line routing aur coating task form
 

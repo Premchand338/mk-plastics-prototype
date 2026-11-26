@@ -41,7 +41,7 @@ const {chromium}=require('playwright');const path=require('path');
   // 2.3 receive 20 frames + 3 loose guchha → (20×2+3)×18×50 = 38,700 moti → 32.25 → 32 bunch
   await p.evaluate(()=>{closeModal();karRecvModal(S.jobs[S.jobs.length-1].id)});await p.waitForTimeout(100);
   const rbHidden=await p.evaluate(()=>getComputedStyle(document.getElementById('rb').closest('.fld')).display==='none');ok(tag,'2.3 "Kitne bunch aaye" replaced',rbHidden,rbHidden);
-  await p.fill('#rfr','20');await p.fill('#rgu','3');await p.fill('#rwt','9');await p.waitForTimeout(80);
+  await p.fill('#rfr','20');await p.fill('#rgu','3');await p.fill('#rwt','9');await p.click('label:has(input[name=qgrade][value="1st"])');await p.selectOption('#rdt','1×2');await p.waitForTimeout(80);
   const rs=await p.evaluate(()=>({b:document.getElementById('rb').value,sum:document.getElementById('rsum').textContent}));
   ok(tag,'2.3 frames → moti → bunch',rs.b==='32'&&/38,700 moti/.test(rs.sum),rs);
   const rOv=await sheetOv();ok(tag,'receive form fits',!rOv,rOv);
