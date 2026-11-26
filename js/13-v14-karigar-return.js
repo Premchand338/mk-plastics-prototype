@@ -118,8 +118,10 @@ karRecvModal = function (id) {
     `<div class="slip3"><div><span class="m">Karigar</span><b>${esc(k.n)}</b></div><div><span class="m">Item</span><b>${esc(plainName(j.key))}</b></div><div><span class="m">Challan</span><b>${esc(j.challan || "–")}</b></div></div>
      <div class="row2"><div class="fld"><label for="rdd">${L("Tareekh", "Date")}</label><input id="rdd" name="rdate" type="date" value="${ymd14(Date.now())}" max="${ymd14(Date.now())}" required></div><div class="fld"><label for="rrc">${L("Maal kisne liya (receiver)", "Received by")}</label><input id="rrc" name="recv" value="${esc((user() || {}).n || "")}" required></div></div>`,
   );
-  f.querySelector(".slipbar")?.insertAdjacentHTML(
-    "afterend",
+  // grade goes after the spec label; beads with no pirai spec have no label, so then before the summary (was a bug: no grade box, return could not save)
+  const gAt = f.querySelector(".slipbar") || f.querySelector(".sumbox");
+  gAt.insertAdjacentHTML(
+    gAt.classList.contains("slipbar") ? "afterend" : "beforebegin",
     `<div class="fld" id="rqg"><span class="lb">${L("Grade (zaroori)", "Grade (required)")}</span><div class="radios">${QGRADES14.map((g) => `<label><input type="radio" name="qgrade" value="${g}">${g}</label>`).join("")}</div><span class="hint" id="rqgh">${L("Slip par grade na likha ho toh karigar se poochho. Bina grade save nahi hoga.", "If the slip has no grade, ask the karigar. It will not save without a grade.")}</span></div>`,
   );
   // dhaga: from the P1 register (g per kg of total weight), type remembered per item

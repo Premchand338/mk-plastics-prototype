@@ -52,6 +52,7 @@ js/
   13-v14-karigar-return.js karigar return slip (grade, dhaga g/kg, cut → waste) + Dhaga stock
   14-v14-frames.js         packet se frame: exact (P2) + owner allowance, task target
   15-v14-daily-entry.js    roz ki entry: work date, frames + packet, reject bunch → waste, owner tab
+  16-v14-task-fields.js    line routing dikhana + owner ke coating task box
   99-boot.js               app start
 tools/build.js             sab kuch ek single HTML file mein jodta hai (dist/)
 tools/release.js           build + releases/<version>/ folder
@@ -62,6 +63,7 @@ tests/pirai.js             Section 2 (pirai) ke checks
 tests/karigar-return.js    Section 3 + 4 (return slip, dhaga) ke checks
 tests/frames.js            Section 6 (packet se frame) ke checks
 tests/daily-entry.js       Section 7 (roz ki entry) ke checks
+tests/routing.js           Section 5 (Metalizing ka raasta, task box) ke checks
 releases/                  har section ki shareable file + notes + screenshots
 docs/                      client review checklist + owner ke registers (CSV)
 CLAUDE.md                  Claude Code ke liye project notes

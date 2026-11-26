@@ -64,9 +64,11 @@ Maal apni line mein khud jaaye.
 
 > Asar: threaded lot ka unit raw material ki line se tay; coating task form mein owner ke format ke fields.
 
-- [ ] **5.1 Pearl ka maal Pearl unit mein, Metal ka Metal mein** — Pearl line ka raw material / threaded maal apne aap Pearl unit; Metalizing ka Metalizing unit. _(source: V8 · 0:00–0:18)_
-- [ ] **5.2 Pehle Pearl line poori** — Metal coating ke task ki requirement owner alag se batayega. _(source: V9 · 0:00–0:16, V12 · 0:00–0:07)_
+- [x] **5.1 Pearl ka maal Pearl unit mein, Metal ka Metal mein** — Pearl line ka raw material / threaded maal apne aap Pearl unit; Metalizing ka Metalizing unit. _(source: V8 · 0:00–0:18)_
+- [x] **5.2 Pehle Pearl line poori** — Metal coating ke task ki requirement owner alag se batayega. _(source: V9 · 0:00–0:16, V12 · 0:00–0:07)_
 - [ ] **5.3 Coating task: owner ke manual format ke saare fields** — Owner message bhejega ki woh haath se task kaise likhta hai; har value ka box/checkbox chahiye.owner ka message baaki _(source: V8 · 0:18–0:46)_
+
+> **Status:** v14.7 (26 Nov) · 5.1 test se pakka, 5.2 process · 5.3: owner khud box jod sakta hai; uske message (Q6) ke box abhi baaki.
 
 ## 6. Coating task: packets se frames
 

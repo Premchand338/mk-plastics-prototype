@@ -11,7 +11,7 @@ Last updated: 26 Nov 2026 · Branch: `claude/bold-pasteur-hc1dru` · Checklist: 
 | 2 · Karigar ko pirai ke liye bhejna | 2.1–2.4 | ✅ Done, owner test baaki | – | – |
 | 3 · Karigar se wapas lena | 3.1–3.6 | ✅ Done (v14.4), owner test baaki | – | – |
 | 4 · Dhaga stock | 4.1–4.3 | ✅ Done (v14.4), owner test baaki | – | – |
-| 5 · Line routing + coating task form | 5.1–5.3 | Baaki (5.3 owner ke message ka intezaar, Q6) | – | – |
+| 5 · Line routing + coating task form | 5.1–5.3 | ✅ v14.7 (5.3: box editor bana; owner ke message ke box baaki, Q6) | [v14.7](../releases/v14.7-routing-task-boxes/) | `js/16-v14-task-fields.js`, `tests/routing.js` |
 | 6 · Packets → frames | 6.1–6.5 | Baaki (allowance list Q4) | – | – |
 | 7 · Daily production entry | 7.1–7.4 | ✅ Done (v14.6), owner test baaki | – | – |
 | 8 · Contractor + workers | 8.1–8.6 | ⏸ Ruka: abhi contractor nahi (26 Nov) | – | – |
@@ -20,7 +20,7 @@ Last updated: 26 Nov 2026 · Branch: `claude/bold-pasteur-hc1dru` · Checklist: 
 ## Process (har section ke liye same)
 
 1. Checklist ka section padho + source (V/P) + register CSV.
-2. Naya layer file: `js/1N-v14-<topic>.js` (agla: `16-v14-…`) (+ CSS agar chahiye), `index.html` mein `99-boot.js` se pehle. Data upgrade ho toh `initV14…()` ko extend karo / `seed()` wrap karo.
+2. Naya layer file: `js/1N-v14-<topic>.js` (agla: `17-v14-…`) (+ CSS agar chahiye), `index.html` mein `99-boot.js` se pehle. Data upgrade ho toh `initV14…()` ko extend karo / `seed()` wrap karo.
 3. Owner ke khule sawaal (Q1–Q11) ke values **guess nahi**: UI mein editable rakho.
 4. Section ka test: `tests/<topic>.js` (phone 390px + desktop), `package.json` ke `test` mein jodo.
 5. `PW_CHROMIUM=/opt/pw-browsers/chromium npm test` (cloud) / `npm test` (local). Smoke numbers: 58 · 10.4 · ₹3,068 · 290 → 40 (v14.5 se; test khud check karta hai).
@@ -84,6 +84,11 @@ Last updated: 26 Nov 2026 · Branch: `claude/bold-pasteur-hc1dru` · Checklist: 
 - Coating reject → regrind / phenk dete hain → Waste mein hi rahe (jaisa hai).
 - **Abhi koi contractor nahi.** Sirf Admin, machine operators aur karigar. Section 8 (contractor login, salary, hajri, kharchi) abhi **ruka hua**; jab contractor aaye tab banayenge.
 - Abhi ruko: pehle owner v14.6 test kare.
+
+## Status (26 Nov, v14.7 ke baad)
+
+- Sections 1–7 bane (8 ruka: contractor nahi). Link **abhi share nahi** (Premchand, 26 Nov); v14.7 sirf `releases/` mein, artifact link v14.6 par hai.
+- Baaki owner se: Q2, Q3a/b/d, Q4 (allowance list), Q5 (dhaga type), Q6 (coating task message), 6MM Semi / 8MM Super spec.
 
 ## Khule sawaal (owner)
 
