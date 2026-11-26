@@ -108,6 +108,8 @@ Fixed salary waale workers ka hajri aur kharchi hisaab.
 - [ ] **8.5 Kharchi (running advance)** — Date ke saath amount, jaise ₹500. _(source: V13 · 0:39–0:51, V13 · 1:20–1:29)_
 - [ ] **8.6 On the spot hisaab** — 6 din × ₹600 = ₹3,600 − ₹500 kharchi = ₹3,100 dena hai. _(source: V13 · 0:55–1:33)_
 
+> **Status (26 Nov):** ruka. Owner: abhi koi contractor nahi, sirf Admin, machine operators, karigar.
+
 ## 9. Delivery aur testing
 
 Owner khud test karega.

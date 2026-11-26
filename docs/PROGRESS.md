@@ -14,7 +14,7 @@ Last updated: 26 Nov 2026 · Branch: `claude/bold-pasteur-hc1dru` · Checklist: 
 | 5 · Line routing + coating task form | 5.1–5.3 | Baaki (5.3 owner ke message ka intezaar, Q6) | – | – |
 | 6 · Packets → frames | 6.1–6.5 | Baaki (allowance list Q4) | – | – |
 | 7 · Daily production entry | 7.1–7.4 | ✅ Done (v14.6), owner test baaki | – | – |
-| 8 · Contractor + workers | 8.1–8.6 | ⏭ Next (Q9: workers kaun) | – | – |
+| 8 · Contractor + workers | 8.1–8.6 | ⏸ Ruka: abhi contractor nahi (26 Nov) | – | – |
 | 9 · Delivery | 9.1 | Har release ke saath link | – | – |
 
 ## Process (har section ke liye same)
@@ -31,7 +31,7 @@ Last updated: 26 Nov 2026 · Branch: `claude/bold-pasteur-hc1dru` · Checklist: 
 
 - **Section 7: done (v14.6).** Pehle ke notes: 7.1 work date (agle din entry), 7.2 operator: frames used + packets bane (task ke against), 7.3 rejected bunch = (frames × moti/frame − packets × moti/packet) ÷ 1,200 → `mpf14(spec)` aur `r.pack × mpb14()` (v14.5 ready), 7.4 owner tab: operator-wise frames / packets / task progress. Coating entry = v9 `entryModal` + `LIVE.coatEntry9` + v13 wrapper (`withBpf`). Smoke test coating entry (#f-in 60, #f-rej 2, auto 58) ka dhyan.
 - **Section 5:** 5.1 line routing check, 5.3 owner message (Q6).
-- **Section 8 (next):** naya role Contractor (login), worker master (naam, salary), per day = salary ÷ 30 (Q9), roz attendance, kharchi (date + amount), on-the-spot hisaab (6 din × ₹600 − ₹500 = ₹3,100). Roles: `03-v7-roles.js` (admin + staff), users `S.users`, login `01-core.js`.
+- **Section 8 (ruka, contractor nahi):** naya role Contractor (login), worker master (naam, salary), per day = salary ÷ 30 (Q9), roz attendance, kharchi (date + amount), on-the-spot hisaab (6 din × ₹600 − ₹500 = ₹3,100). Roles: `03-v7-roles.js` (admin + staff), users `S.users`, login `01-core.js`.
 - Frames: `r.fpp` = exact frame/packet (P2, `syncFpp14`), `r.alw` = owner allowance, `taskFpp14(it)` = task ke liye.
 
 ## Owner ke jawab (26 Nov)
@@ -78,6 +78,12 @@ Last updated: 26 Nov 2026 · Branch: `claude/bold-pasteur-hc1dru` · Checklist: 
 
 - Coating entry mein dono tareeke rakhe (packet bhara = owner ka; khaali = purana frame wala).
 - Reject bunch (owner ka hisaab) → Waste "Coating reject".
+
+## Jawab (26 Nov, v14.6 ke baad)
+
+- Coating reject → regrind / phenk dete hain → Waste mein hi rahe (jaisa hai).
+- **Abhi koi contractor nahi.** Sirf Admin, machine operators aur karigar. Section 8 (contractor login, salary, hajri, kharchi) abhi **ruka hua**; jab contractor aaye tab banayenge.
+- Abhi ruko: pehle owner v14.6 test kare.
 
 ## Khule sawaal (owner)
 
