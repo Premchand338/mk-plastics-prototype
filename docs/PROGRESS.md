@@ -14,7 +14,7 @@ Last updated: 26 Nov 2026 · Branch: `claude/bold-pasteur-hc1dru` · Checklist: 
 | 5 · Line routing + coating task form | 5.1–5.3 | Baaki (5.3 owner ke message ka intezaar, Q6) | – | – |
 | 6 · Packets → frames | 6.1–6.5 | Baaki (allowance list Q4) | – | – |
 | 7 · Daily production entry | 7.1–7.4 | ✅ Done (v14.6), owner test baaki | – | – |
-| 8 · Contractor + workers | 8.1–8.6 | Baaki (Q7, Q9) | – | – |
+| 8 · Contractor + workers | 8.1–8.6 | ⏭ Next (Q9: workers kaun) | – | – |
 | 9 · Delivery | 9.1 | Har release ke saath link | – | – |
 
 ## Process (har section ke liye same)
