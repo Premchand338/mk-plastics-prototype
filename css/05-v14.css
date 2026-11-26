@@ -16,9 +16,23 @@
 .pw14:first-of-type{border-top:0;padding-top:4px}
 .pw14 .btns{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 /* slip paper (fixed light colours, like the invoice paper) */
-.slipmeta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.slipmeta{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}
 @media (max-width:460px){.slipmeta{grid-template-columns:minmax(0,1fr)}}
 .slip14 tr.g0 td{border-top:2px solid #E6E1D5}
 .slip14 tfoot td{border-top:2px solid #C9A86A}
 .slipsign{justify-self:end;text-align:right;min-width:160px;border-top:1px dashed #C9A86A;padding-top:6px}
 .slipc .avl .pill{white-space:normal;max-width:100%;line-height:1.35;height:auto}
+/* ===== v14.2 · dispatch → bill ===== */
+.dr14{display:grid;gap:8px;padding:12px 14px;border:1px solid var(--line);border-radius:16px;min-width:0}
+.dr14 .t1{font-weight:600;font-size:13.5px}
+.b14[hidden]{display:none!important}
+a.btn{text-decoration:none}
+/* PDF download = browser print of the invoice paper only */
+@media print{
+  body.print14{background:#fff!important}
+  body.print14>*:not(#modal-root){display:none!important}
+  body.print14 #modal-root .ov,body.print14 #modal-root .sheet,body.print14 #modal-root .sh-b{position:static!important;inset:auto!important;max-height:none!important;height:auto!important;overflow:visible!important;box-shadow:none!important;background:#fff!important;transform:none!important;animation:none!important;padding:0!important;margin:0!important;border:0!important;max-width:none!important;width:auto!important;backdrop-filter:none!important}
+  body.print14 #modal-root .sh-h,body.print14 #modal-root .sh-f,body.print14 #modal-root .sh-b>:not(.paper){display:none!important}
+  body.print14 #modal-root .paper{border:0!important;padding:0!important}
+  body.print14 .paper .tw{-webkit-mask-image:none!important;mask-image:none!important;overflow:visible!important}
+}

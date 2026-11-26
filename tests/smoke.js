@@ -24,8 +24,8 @@ const {chromium}=require('playwright');const path=require('path');
   await p.evaluate(()=>{closeModal();S.view='orders';render();newOrderModal()});await p.waitForTimeout(100);
   await p.selectOption('#oc0','Golden');await p.selectOption('#oco0','D');await p.fill('#oq0','5');await p.waitForTimeout(80);const rate=await p.inputValue('#or0');
   await c('form[data-f=order] button[type=submit]');await p.evaluate(()=>{closeModal();orderDetailModal(S.orders[0].id)});await c('#modal-root [data-a=billOrder]');
-  await c('form[data-f=billOrder] button[type=submit]');const inv=await p.evaluate(()=>[S.invoices[0].no,S.invoices[0].total]);
-  await c('#modal-root [data-a=dispBill]');await p.fill('#dv','MH04 AB 1234');await c('form[data-f=dispBill] button[type=submit]');const afterDisp=await J();
+  // v14.2 (owner's answer Q11, 26 Nov): dispatch first, bill in the same step. Same numbers as before.
+  await p.fill('#dv','MH04 AB 1234');await c('form[data-f=dispatch14] button[type=submit]');const inv=await p.evaluate(()=>[S.invoices[0].no,S.invoices[0].total]);const afterDisp=await J();
   let overflow=false;for(const v of ['home','tasks','production','karigar','coating','dispatch','maal','stock','waste','products','orders','khaata','kharcha','reports','log','team','guide']){await p.evaluate(v=>{S.user='admin';S.view=v;closeModal();render()},v);if(await ov())overflow=v}
   await p.evaluate(()=>{S.view='home';render()});await c('[data-a=bell]');const bell=await p.evaluate(()=>!!document.querySelector('.bellw.open'));
   out.push({tag,autoOut,rate,inv,afterCoat,afterDisp,bell,overflow,errors:errs});await ctx.close()}

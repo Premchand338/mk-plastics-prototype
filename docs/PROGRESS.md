@@ -1,14 +1,14 @@
 # Progress · client review fixes (Pearl line)
 
-Last updated: 25 Nov 2026 · Branch: `claude/bold-pasteur-hc1dru` · Checklist: `docs/client-review-2026-11-24.md`
+Last updated: 26 Nov 2026 · Branch: `claude/bold-pasteur-hc1dru` · Checklist: `docs/client-review-2026-11-24.md`
 
 ## Status
 
 | Section | Checks | Status | Release | Code |
 |---|---|---|---|---|
 | 1 · Order slip | 1.1–1.8 | ✅ Done, owner test baaki | [v14.1](../releases/v14.1-order-slip/) · https://claude.ai/artifact/3b81iMAGmvTXbEhwSSz414 | `js/10-v14-order-slip.js`, `css/05-v14.css`, `tests/slip.js` |
-| 1 fix · Dispatch → bill (Q11) | 1.8 | ⏭ Next (v14.2) | – | – |
-| 2 · Karigar ko pirai ke liye bhejna | 2.1–2.4 | Uske baad | – | – |
+| 1 fix · Dispatch → bill (Q11) | 1.8 | ✅ Done, owner test baaki | [v14.2](../releases/v14.2-dispatch-bill/) | `js/11-v14-dispatch-bill.js`, `tests/dispatch.js` |
+| 2 · Karigar ko pirai ke liye bhejna | 2.1–2.4 | ⏭ Next | – | – |
 | 3 · Karigar se wapas lena | 3.1–3.6 | Baaki | – | – |
 | 4 · Dhaga stock | 4.1–4.3 | Baaki | – | – |
 | 5 · Line routing + coating task form | 5.1–5.3 | Baaki (5.3 owner ke message ka intezaar, Q6) | – | – |
@@ -20,7 +20,7 @@ Last updated: 25 Nov 2026 · Branch: `claude/bold-pasteur-hc1dru` · Checklist: 
 ## Process (har section ke liye same)
 
 1. Checklist ka section padho + source (V/P) + register CSV.
-2. Naya layer file: `js/1N-v14-<topic>.js` (+ CSS agar chahiye), `index.html` mein `99-boot.js` se pehle. Data upgrade ho toh `initV14…()` ko extend karo / `seed()` wrap karo.
+2. Naya layer file: `js/1N-v14-<topic>.js` (agla: `12-v14-…`) (+ CSS agar chahiye), `index.html` mein `99-boot.js` se pehle. Data upgrade ho toh `initV14…()` ko extend karo / `seed()` wrap karo.
 3. Owner ke khule sawaal (Q1–Q11) ke values **guess nahi**: UI mein editable rakho.
 4. Section ka test: `tests/<topic>.js` (phone 390px + desktop), `package.json` ke `test` mein jodo.
 5. `PW_CHROMIUM=/opt/pw-browsers/chromium npm test` (cloud) / `npm test` (local). Smoke numbers same: 58 · 10.4 · ₹3,068 · 580 → 330.
@@ -54,6 +54,8 @@ Last updated: 25 Nov 2026 · Branch: `claude/bold-pasteur-hc1dru` · Checklist: 
 - Q8 → dhaga kul wazan (dhaage ke saath) par.
 - Q9 → mahina = 30 din.
 - Baaki: Q2, Q3, Q4, Q5, Q6, Q9 (workers kaun).
+
+- CA se poochna: "Bill baad mein" se invoice number aur tareekh ka kram ulta ho sakta hai (v14.2 notes).
 
 ## Khule sawaal (owner)
 

@@ -67,11 +67,11 @@ const {chromium}=require('playwright');const path=require('path');
     const A=alloc14();return {st:orderStatus(o),made:madePk14(o,A)}});
   ok(tag,'1.7 ready to dispatch when made = ordered',alloc.st==='ready'&&alloc.made===5,alloc);
 
-  // 1.8 rate at bill time: change 10.4 → 11 for slip 220
-  await p.evaluate(()=>{render();billOrderModal(S.orders.find(x=>x.no===220).id)});await p.waitForTimeout(100);
-  await p.fill('#brt0','11');await p.waitForTimeout(60);
-  const billOv=await sheetOv();ok(tag,'bill form fits',!billOv,billOv);
-  await c('form[data-f=billOrder] button[type=submit]');
+  // 1.8 rate at bill time (v14.2: on the dispatch screen, "Abhi bill banao"): 10.4 → 11 for slip 220
+  await p.evaluate(()=>{render();orderDetailModal(S.orders.find(x=>x.no===220).id)});await c('#modal-root [data-a=billOrder]');
+  await p.fill('#dv','MH04 AB 1234');await p.fill('#drt0','11');await p.waitForTimeout(60);
+  const billOv=await sheetOv();ok(tag,'dispatch form fits',!billOv,billOv);
+  await c('form[data-f=dispatch14] button[type=submit]');
   const inv=await p.evaluate(()=>{const i=S.invoices[S.invoices.length-1];return {rate:i.lines[0].rate,taxable:i.taxable,slip:!!document.querySelector('#modal-root .slipmeta')}});
   ok(tag,'1.8 bill uses the new rate',inv.rate===11&&Math.abs(inv.taxable-5*50*11)<0.01,inv);ok(tag,'invoice shows slip + transport',inv.slip,inv.slip);
 
