@@ -26,10 +26,12 @@ Karigar ko bata ke bhejna ki guchha kaise banana hai.
 
 > Asar: naya master data (31 items ka pirai spec); karigar challan mein spec; "bunch" shabd ka matlab badlega.
 
-- [ ] **2.1 Pirai spec master** — Har item: ladi per guchha, guchha per frame (2), moti per ladi. Photo P2 ki 31 lines import ho. _(source: V4 · 0:00–1:09, P2)_
-- [ ] **2.2 Send challan par spec dikhe** — Jaise 8mm Semi: 18 ladi ka guchha, 2 guchha = 1 frame (36 ladi), 50 moti per ladi. _(source: V4 · 0:24–0:42, V6 · 0:00–0:08)_
-- [ ] **2.3 "Bunch" ka sahi matlab** — Hamara bunch = 1,200 moti (standard). Karigar guchha/frame mein deta hai, woh bunch nahi. App mein "Kitne bunch aaye" ki jagah guchha/frame. _(source: V5 · 0:00–0:21)_
-- [ ] **2.4 Naya item: No 6 B.H.L.** — B.H.L. = Big Hole. Aur "Semi F" bhi register mein hai; dono item list mein. _(source: V4 · 0:10–0:17, P2)_
+- [x] **2.1 Pirai spec master** — Har item: ladi per guchha, guchha per frame (2), moti per ladi. Photo P2 ki 31 lines import ho. _(source: V4 · 0:00–1:09, P2)_
+- [x] **2.2 Send challan par spec dikhe** — Jaise 8mm Semi: 18 ladi ka guchha, 2 guchha = 1 frame (36 ladi), 50 moti per ladi. _(source: V4 · 0:24–0:42, V6 · 0:00–0:08)_
+- [x] **2.3 "Bunch" ka sahi matlab** — Hamara bunch = 1,200 moti (standard). Karigar guchha/frame mein deta hai, woh bunch nahi. App mein "Kitne bunch aaye" ki jagah guchha/frame. _(source: V5 · 0:00–0:21)_
+- [x] **2.4 Naya item: No 6 B.H.L.** — B.H.L. = Big Hole. Aur "Semi F" bhi register mein hai; dono item list mein. _(source: V4 · 0:10–0:17, P2)_
+
+> **Status:** v14.3 mein bana (26 Nov) · `releases/v14.3-pirai/` · Q3c (6 Munga 060/080) editable, "confirm baaki".
 
 ## 3. Karigar se wapas lena
 

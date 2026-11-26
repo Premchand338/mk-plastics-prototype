@@ -104,7 +104,7 @@ const rlShape = (r) => (KIND9[r.kind] ? KIND9[r.kind][0] : r.kind);
 const rlDupe = (r) =>
   S.rl.filter((x) => x.size === r.size && x.kind === r.kind).length > 1;
 const rlName = (r) =>
-  `${r.size} ${r.kind}${rlDupe(r) && r.bpk ? " · " + nf(r.bpk) + "B" : ""}`;
+  `${r.size} ${r.kind}${rlDupe(r) && r.bpk ? " · " + +r.bpk + "B" : ""}`;
 const rlRate = (r, c) => (c === "D" ? r.d : r.s);
 const COATN = (c) => (c === "D" ? "Double" : "Single");
 function itemOpts(sel) {

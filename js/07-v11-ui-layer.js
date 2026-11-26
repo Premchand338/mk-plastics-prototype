@@ -137,7 +137,7 @@ function tapItem(s) {
    <div class="ip-ty">${items
      .map(({ o, r }) => {
        const on = o.value === s.value,
-         bp = rlDupe(r) && r.bpk ? nf(r.bpk) + "B" : "";
+         bp = rlDupe(r) && r.bpk ? +r.bpk + "B" : "";
        return `<button type="button" class="tchip ty${on ? " on" : ""}" role="radio" aria-checked="${on}" data-tv="${o.value}" ${o.disabled ? "disabled" : ""}><b>${esc(r.kind)}${bp ? " · " + bp : ""}</b><small>#${r.no}${o.disabled ? " · " + L("rate baaki", "rate pending") : r.pack ? " · " + r.pack + " " + L("bunch/packet", "bunch/packet") : ""}</small></button>`;
      })
      .join("")}</div>`;

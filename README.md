@@ -48,12 +48,14 @@ js/
   09-v13-owner-changes.js  line-wise raw material, shapes, P2, frames per packet
   10-v14-order-slip.js     order slip: slip no. series, kai rang, transport, priority, party-wise, bill par rate
   11-v14-dispatch-bill.js  pehle dispatch, phir bill (abhi / baad mein), PDF, WhatsApp, bill setting
+  12-v14-pirai.js          pirai spec (P2), challan par spec, frame / guchha se bunch (1,200 moti)
   99-boot.js               app start
 tools/build.js             sab kuch ek single HTML file mein jodta hai (dist/)
 tools/release.js           build + releases/<version>/ folder
 tests/smoke.js             poora flow chalake numbers check karta hai
 tests/slip.js              Section 1 (order slip) ke checks
 tests/dispatch.js          v14.2 dispatch → bill ke checks
+tests/pirai.js             Section 2 (pirai) ke checks
 releases/                  har section ki shareable file + notes + screenshots
 docs/                      client review checklist + owner ke registers (CSV)
 CLAUDE.md                  Claude Code ke liye project notes

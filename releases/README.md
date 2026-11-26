@@ -5,7 +5,8 @@ Banane ka tarika: `npm test` pass → `node tools/release.js v14.N slug` → us 
 
 | Version | Date | Section | Folder · link | Status |
 |---|---|---|---|---|
-| v14.2 | 26 Nov 2026 | Q11 · Pehle dispatch, phir bill (abhi / baad mein, PDF, WhatsApp) | [v14.2-dispatch-bill](v14.2-dispatch-bill/) · [link](https://claude.ai/artifact/3b81iMAGmvTXbEhwSSz414) | Owner test ke liye taiyaar |
+| v14.3 | 26 Nov 2026 | 2 · Karigar ko pirai (2.1–2.4): spec master, challan, frame / guchha | [v14.3-pirai](v14.3-pirai/) · [link](https://claude.ai/artifact/3b81iMAGmvTXbEhwSSz414) | Owner test ke liye taiyaar |
+| v14.2 | 26 Nov 2026 | Q11 · Pehle dispatch, phir bill (abhi / baad mein, PDF, WhatsApp) | [v14.2-dispatch-bill](v14.2-dispatch-bill/) | v14.3 mein shaamil |
 | v14.1 | 25 Nov 2026 | 1 · Order slip (1.1–1.8) | [v14.1-order-slip](v14.1-order-slip/) | v14.2 mein shaamil |
 
 Folder ke andar:
