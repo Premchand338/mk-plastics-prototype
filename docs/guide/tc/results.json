@@ -1,0 +1,272 @@
+{
+ "ts": 1795684394940,
+ "cases": [
+  {
+   "id": "TC1",
+   "title": "Pearl order ka poora safar",
+   "goal": "Raw material se lekar dispatch aur baad mein bill tak, ek hi order ke saath. Do rang ka slip; ek rang bana aur gaya, doosra baaki.",
+   "steps": [
+    {
+     "pass": true,
+     "sec": "Moulding",
+     "do": "Inward: GPPS 206 Semi 300 kg. Moulding task 3MM Round SR. Vinod (M1): 105 kg liya, 100 kg achha. Owner approve.",
+     "expect": "Moulded stock 100 kg (Pearl)",
+     "actual": "100 kg"
+    },
+    {
+     "pass": true,
+     "sec": "Dhaga",
+     "do": "Stock → Dhaga → \"Dhaga aaya\": 1×2, 10 kg (opening).",
+     "expect": "1×2 dhaga 10 kg",
+     "actual": "10 kg",
+     "shot": "TC1-01-dhaga-stock.jpg"
+    },
+    {
+     "pass": true,
+     "sec": "Karigar ko bhejna",
+     "do": "Karigar → Bhejo: Tausif bhai, 3MM Semi, 100 kg.",
+     "expect": "Spec 30 ladi × 2 guchha × 100 moti = 6,000 moti / frame, andaaza 1,200 frame (100 kg × 60 bunch/kg × 1,200 ÷ 6,000)",
+     "actual": "6,000 moti / frame · andaazan 1,200 frame",
+     "shot": "TC1-02-send-spec.jpg"
+    },
+    {
+     "pass": true,
+     "sec": "Karigar ko bhejna",
+     "do": "\"Bhejo + challan banao\".",
+     "expect": "Job-work challan par pirai spec",
+     "actual": "challan par spec hai",
+     "shot": "TC1-03-challan.jpg"
+    },
+    {
+     "pass": true,
+     "sec": "Karigar se wapas",
+     "do": "Wapas lo: 301 frame, kul wazan 107.53 kg, grade 1st, dhaga 1×2, receiver Salman.",
+     "expect": "301 × 6,000 = 18,06,000 moti = 1,505 bunch · dhaga 107.53 × 70 g = 7.527 kg · baaki 0",
+     "actual": "1,505 bunch · dhaga 7.527 kg",
+     "shot": "TC1-04-return-slip.jpg"
+    },
+    {
+     "pass": true,
+     "sec": "Karigar se wapas",
+     "do": "\"Threaded maal aaya\" → \"Move to Pearl coating\".",
+     "expect": "Lot 1,505 bunch Pearl coating mein · dhaga 10 → 2.473 kg",
+     "actual": "1505 bunch · coating mein · P · dhaga 2.473 kg"
+    },
+    {
+     "pass": true,
+     "sec": "Order slip",
+     "do": "Naya order: Laxmi Lace Works, 3MM Semi Double, Rani Gulabi 10 + Green 10 packet.",
+     "expect": "Slip no. 224, transport Bhiwandi → Mumbai, 20 packet",
+     "actual": "Slip 224 · Bhiwandi → Mumbai",
+     "shot": "TC1-05-order-slip.jpg"
+    },
+    {
+     "pass": true,
+     "sec": "Order slip",
+     "do": "Save → app batata hai kya kam hai.",
+     "expect": "Rani Gulabi: \"Coating task do (10 packet · 100 frame)\"",
+     "actual": "Coating task do (10 packet · 100 frame)",
+     "shot": "TC1-06-order-next.jpg"
+    },
+    {
+     "pass": true,
+     "sec": "Coating task",
+     "do": "\"Coating task do\" (Rani Gulabi).",
+     "expect": "10 packet → 100 frame (3MM Semi exact 10 frame / packet, allowance abhi nahi)",
+     "actual": "10 packet → 100 frame",
+     "shot": "TC1-07-coat-task.jpg"
+    },
+    {
+     "pass": true,
+     "sec": "Roz ki entry",
+     "do": "Salman (P1), agle din: work date kal, frames use hue 105, packet bane 10.",
+     "expect": "(105 × 6,000 − 10 × 60,000) ÷ 1,200 = 25 bunch reject",
+     "actual": "25 bunch → Waste",
+     "shot": "TC1-08-daily-entry.jpg"
+    },
+    {
+     "pass": true,
+     "sec": "Approval",
+     "do": "Owner: Approval → OK.",
+     "expect": "Rani Gulabi taiyaar 10 × 50 = 500 bunch · coating reject 25 bunch waste mein",
+     "actual": "3MM Round Rani Gulabi: 500 bunch · reject 25 bunch"
+    },
+    {
+     "pass": true,
+     "sec": "Party-wise",
+     "do": "Orders → Party-wise.",
+     "expect": "Rani Gulabi bane 10 / 10, Green 0 / 10 baaki",
+     "actual": "Rani Gulabi 10/10 · Green baaki",
+     "shot": "TC1-09-party-wise.jpg"
+    },
+    {
+     "pass": true,
+     "sec": "Dispatch",
+     "do": "Dispatch karo: Rani Gulabi 10 packet, gaadi MH04 AB 1234, tareekh kal, \"Bill baad mein\".",
+     "expect": "Green 0 (stock nahi), rate box chhupe",
+     "actual": "Rani Gulabi 10 · Green 0",
+     "shot": "TC1-10-dispatch.jpg"
+    },
+    {
+     "pass": true,
+     "sec": "Dispatch",
+     "do": "Save.",
+     "expect": "Stock 500 → 0, \"Bill banana baaki\" mein 1",
+     "actual": "stock 0 · bill baaki 1"
+    },
+    {
+     "pass": true,
+     "sec": "Bill baad mein",
+     "do": "Orders page.",
+     "expect": "\"Bill banana baaki\": Slip #224, 1 din se baaki",
+     "actual": "1 din se baaki",
+     "shot": "TC1-11-bill-pending.jpg"
+    },
+    {
+     "pass": true,
+     "sec": "Bill baad mein",
+     "do": "Bill banao → rate 10.4 (slip se) → Bill banao.",
+     "expect": "MK/26-27/0001 · 10 × 50 × 10.4 = 5,200 + CGST/SGST 18% = ₹6,136 · tareekh = dispatch (kal), bill bana = aaj",
+     "actual": "MK/26-27/0001 · ₹6136 · dispatch ki tareekh · bill bana aaj",
+     "shot": "TC1-12-invoice.jpg"
+    }
+   ]
+  },
+  {
+   "id": "TC2",
+   "title": "Karigar slip (P3): grade, dhaga, cut, alert",
+   "goal": "Owner ki photo P3 wali slip: Tausif · 3 No Semi · 40.400 kg · cut 0.800 · Salman. Grade zaroori, dhaga apne aap, cut waste mein, dhaga kam ho toh alert.",
+   "steps": [
+    {
+     "pass": true,
+     "sec": "Dhaga",
+     "do": "Dhaga aaya: 1×2, 5 kg. \"Type / reorder\": 1×2 ka reorder 3 kg.",
+     "expect": "Stock 5 kg, reorder 3 kg, abhi alert nahi",
+     "actual": "5 kg · reorder 3 kg"
+    },
+    {
+     "pass": true,
+     "sec": "Karigar se wapas",
+     "do": "Slip jaisa bharo (P3): 40.400 kg, cut 0.800, Salman, dhaga 1×2, par grade nahi chuna → Save.",
+     "expect": "Save nahi hoga: \"Grade chuno\"",
+     "actual": "Grade chuno (1st / 2nd / 3rd). Bina grade save nahi hoga.",
+     "shot": "TC2-01-grade-required.jpg"
+    },
+    {
+     "pass": true,
+     "sec": "Karigar se wapas",
+     "do": "Grade 1st chuno.",
+     "expect": "Dhaga 40.400 × 70 g = 2.828 kg · stock iske baad 2.172 · cut → Semi waste 1st grade",
+     "actual": "dhaga 2.828 · stock 2.172 · cut Semi 1st",
+     "shot": "TC2-02-return-ok.jpg"
+    },
+    {
+     "pass": true,
+     "sec": "Karigar se wapas",
+     "do": "Save.",
+     "expect": "Maal 37.572 kg · dhaga stock 2.172 kg · Semi waste 2.8 kg (2 kg moulding + 0.800 cut, 1st)",
+     "actual": "maal 37.572 · dhaga 2.172 · waste 2.8 (1st)"
+    },
+    {
+     "pass": true,
+     "sec": "Dhaga alert",
+     "do": "Home → bell.",
+     "expect": "\"1×2 dhaga kam: 2.172 kg\" (reorder 3 se kam)",
+     "actual": "1×2 dhaga kam: 2.172 kg"
+    },
+    {
+     "pass": true,
+     "sec": "Dhaga alert",
+     "do": "Stock → Dhaga tab.",
+     "expect": "1×2: 2.172 kg, \"kam hai\", tab par badge",
+     "actual": "1×22.172 kgreorder 3.000 kgkam hai",
+     "shot": "TC2-03-dhaga-low.jpg"
+    },
+    {
+     "pass": true,
+     "sec": "Waste",
+     "do": "Waste page.",
+     "expect": "\"Pirai ka cut · grade ke hisaab se\": Semi 1st 0.800 kg",
+     "actual": "Semi waste · 1st grade 0.800 kg",
+     "shot": "TC2-04-waste.jpg"
+    },
+    {
+     "pass": true,
+     "sec": "Karigar page",
+     "do": "Karigar page.",
+     "expect": "Frame aaye 120 · 1st · dhaga 2.828 · cut 0.800",
+     "actual": "1st · dhaga 2.828 kg · cut 0.800 kg",
+     "shot": "TC2-05-karigar-page.jpg"
+    }
+   ]
+  },
+  {
+   "id": "TC3",
+   "title": "Pehla slip pehle, turant bill, Metalizing ka raasta",
+   "goal": "Do party ne same maal maanga, stock ek ke liye kaafi: purana slip pehle. Turant bill (IGST), PDF aur WhatsApp. Phir Metalizing ka maal sirf MZ1 ko.",
+   "steps": [
+    {
+     "pass": true,
+     "sec": "Priority",
+     "do": "Stock: 500 bunch (10 packet). Slip 224 (Shree Ganesh, Surat) 8 packet, slip 225 (Noor Embroidery) 8 packet.",
+     "expect": "#224 ready (pehla), #225 waiting (bacha 2 packet)",
+     "actual": "#224 ready · #225 waiting",
+     "shot": "TC3-01-priority.jpg"
+    },
+    {
+     "pass": true,
+     "sec": "Priority",
+     "do": "Party-wise tab.",
+     "expect": "Shree Ganesh: Ready to dispatch · Noor: 2 bane / 8",
+     "actual": "Ready to dispatch · Maal ka intezaar",
+     "shot": "TC3-02-party-priority.jpg"
+    },
+    {
+     "pass": true,
+     "sec": "Turant bill",
+     "do": "Slip 224 → Dispatch karo → gaadi GJ05 XY 4321 → \"Dispatch + bill banao\" (Abhi bill banao).",
+     "expect": "MK/26-27/0001 · 8 × 50 × 10.4 = 4,160 + IGST 18% (Gujarat) = ₹4,909 · stock 500 → 100",
+     "actual": "MK/26-27/0001 · ₹4909 · IGST · stock 100",
+     "shot": "TC3-03-invoice-now.jpg"
+    },
+    {
+     "pass": true,
+     "sec": "Turant bill",
+     "do": "WhatsApp button.",
+     "expect": "Message mein bill no., party, slip 224, gaadi, total",
+     "actual": "=*MK Plastics · Beads Bazaar* ⏎ Tax Invoice MK/26-27/0001 · 26/11/2026 ⏎ Shree Ganesh Garments, Surat ⏎ Order slip 224 · Bhiwandi → Surat ⏎ Gaadi: GJ05"
+    },
+    {
+     "pass": true,
+     "sec": "Turant bill",
+     "do": "\"PDF download\" → browser print → Save as PDF.",
+     "expect": "Sirf bill ka kaagaz chhapta hai, file ka naam MK-26-27-0001",
+     "actual": "print view: sirf invoice",
+     "shot": "TC3-04-pdf-view.jpg"
+    },
+    {
+     "pass": true,
+     "sec": "Metalizing",
+     "do": "Black PP (Metalizing raw material): inward, moulding task Metalizing line, M1 entry 52 → 50 kg, approve.",
+     "expect": "Moulded maal sirf Metalizing stock mein",
+     "actual": "6MM|Round|Black PP|SR · Pearl mein 0"
+    },
+    {
+     "pass": true,
+     "sec": "Metalizing",
+     "do": "Karigar ko bhejo + wapas lo (Black PP ka pirai spec nahi, isliye bunch seedha: 400).",
+     "expect": "\"Move to Metalizing\"",
+     "actual": "Move to Metalizing"
+    },
+    {
+     "pass": true,
+     "sec": "Metalizing",
+     "do": "Coating task: pehle P1 (Pearl), phir MZ1 (Metalizing) chuno.",
+     "expect": "P1 ko 0 lot, MZ1 ko 1 lot (Black PP)",
+     "actual": "P1: 0 lot · MZ1: 1 lot",
+     "shot": "TC3-05-metal-task.jpg"
+    }
+   ]
+  }
+ ]
+}

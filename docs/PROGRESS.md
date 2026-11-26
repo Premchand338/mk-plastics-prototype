@@ -90,6 +90,12 @@ Last updated: 26 Nov 2026 · Branch: `claude/bold-pasteur-hc1dru` · Checklist: 
 - Sections 1–7 bane (8 ruka: contractor nahi). Link **abhi share nahi** (Premchand, 26 Nov); v14.7 sirf `releases/` mein, artifact link v14.6 par hai.
 - Baaki owner se: Q2, Q3a/b/d, Q4 (allowance list), Q5 (dhaga type), Q6 (coating task message), 6MM Semi / 8MM Super spec.
 
+## Guide + review (26 Nov)
+
+- `docs/guide/MK-Plastics-Guide-v14.7.pdf` (21 page, Hinglish): har section ka step-by-step, 3 test case (32/32 pass), review report (744 checks, 0 problem), owner ke sawaal.
+- Dobara banana: `npm run review` · `npm run guide` (cloud: `PW_CHROMIUM=/opt/pw-browsers/chromium`).
+- Review ka sujhaav: bell mein dhaga alert "Stock" group mein chhup jaata hai → alag group (owner se poochna).
+
 ## Khule sawaal (owner)
 
 Q1–Q11 checklist ke end mein. Sabse zaroori abhi: **Q10** (rate slip par bhi?), **Q11** (bill dispatch se pehle ya baad?), **Q1/Q3** (P2 register ke unclear rows, Section 2 ke liye).

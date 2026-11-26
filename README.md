@@ -56,6 +56,9 @@ js/
   99-boot.js               app start
 tools/build.js             sab kuch ek single HTML file mein jodta hai (dist/)
 tools/release.js           build + releases/<version>/ folder
+tools/review.js            poore app ka review (har screen × phone/desktop × theme × bhasha)
+tools/test-cases.js        3 end-to-end test case (screenshot ke saath)
+tools/guide.js             owner guide + test report PDF (docs/guide/)
 tests/smoke.js             poora flow chalake numbers check karta hai
 tests/slip.js              Section 1 (order slip) ke checks
 tests/dispatch.js          v14.2 dispatch → bill ke checks
@@ -66,6 +69,7 @@ tests/daily-entry.js       Section 7 (roz ki entry) ke checks
 tests/routing.js           Section 5 (Metalizing ka raasta, task box) ke checks
 releases/                  har section ki shareable file + notes + screenshots
 docs/                      client review checklist + owner ke registers (CSV)
+docs/guide/                MK-Plastics-Guide-v14.7.pdf: section-wise guide, 3 test case, review report
 CLAUDE.md                  Claude Code ke liye project notes
 ```
 
