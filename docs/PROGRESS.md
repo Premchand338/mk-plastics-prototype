@@ -10,7 +10,7 @@ Last updated: 26 Nov 2026 · Branch: `claude/bold-pasteur-hc1dru` · Checklist: 
 | 1 fix · Dispatch → bill (Q11) | 1.8 | ✅ Done, owner test baaki | [v14.2](../releases/v14.2-dispatch-bill/) | `js/11-v14-dispatch-bill.js`, `tests/dispatch.js` |
 | 2 · Karigar ko pirai ke liye bhejna | 2.1–2.4 | ✅ Done, owner test baaki | – | – |
 | 3 · Karigar se wapas lena | 3.1–3.6 | ⏭ Next | – | – |
-| 4 · Dhaga stock | 4.1–4.3 | Baaki | – | – |
+| 4 · Dhaga stock | 4.1–4.3 | ⏭ Next (Section 3 ke saath, v14.4) | – | – |
 | 5 · Line routing + coating task form | 5.1–5.3 | Baaki (5.3 owner ke message ka intezaar, Q6) | – | – |
 | 6 · Packets → frames | 6.1–6.5 | Baaki (allowance list Q4) | – | – |
 | 7 · Daily production entry | 7.1–7.4 | Baaki | – | – |
@@ -56,6 +56,12 @@ Last updated: 26 Nov 2026 · Branch: `claude/bold-pasteur-hc1dru` · Checklist: 
 - Baaki: Q2, Q3, Q4, Q5, Q6, Q9 (workers kaun).
 
 - CA se poochna: "Bill baad mein" se invoice number aur tareekh ka kram ulta ho sakta hai (v14.2 notes).
+
+## Jawab (26 Nov, v14.3 ke baad)
+
+- Karigar kabhi kabhi khule guchha bhi deta hai → "Khule guchha" box rahega.
+- Frame ka andaaza lagbhag sahi → waisa hi.
+- Section 3 + 4 ek saath (v14.4): return form ek hi baar badlega.
 
 ## Khule sawaal (owner)
 
