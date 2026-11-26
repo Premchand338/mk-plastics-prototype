@@ -68,6 +68,12 @@ Last updated: 26 Nov 2026 · Branch: `claude/bold-pasteur-hc1dru` · Checklist: 
 - Cut ka grade alag ya wahi: abhi poocha nahi (abhi maal wala grade).
 - Agla: Section 6.
 
+## Jawab (26 Nov, v14.5 ke baad)
+
+- Allowance: Zahid bhai baaki items ki list bhejenge (Q4) → aate hi rate list mein.
+- 6MM Semi / 8MM Super ka pirai spec: abhi poocha nahi.
+- Agla: Section 7.
+
 ## Khule sawaal (owner)
 
 Q1–Q11 checklist ke end mein. Sabse zaroori abhi: **Q10** (rate slip par bhi?), **Q11** (bill dispatch se pehle ya baad?), **Q1/Q3** (P2 register ke unclear rows, Section 2 ke liye).
