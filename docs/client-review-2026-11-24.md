@@ -88,10 +88,12 @@ Aaj ka kaam kal pack hota hai, isliye entry agle din.
 
 > Asar: entry ki tareekh (work date), naye fields, rejected bunch ka auto hisaab, owner ka view.
 
-- [ ] **7.1 Entry agle din, kal ki shift ke liye** — Aaj bane packets kal pack hote hain; operator agle din entry kare aur work date chune. _(source: V10 · 0:13–0:43)_
-- [ ] **7.2 Operator ke inputs** — Frames used (target se 1–2 upar-neeche ho sakti) aur task ke against packets bane. _(source: V10 · 0:55–1:21)_
-- [ ] **7.3 Rejected bunch apne aap** — Task ke frames khatam hone par: (frames × moti/frame − packets × moti/packet) ÷ 1,200. _(source: V10 · 1:21–1:48)_
-- [ ] **7.4 Owner tab mein operator ka input** — Kis operator ne kis task par kitne frames, kitne packets; task ka progress. _(source: V11 · 0:00–0:16)_
+- [x] **7.1 Entry agle din, kal ki shift ke liye** — Aaj bane packets kal pack hote hain; operator agle din entry kare aur work date chune. _(source: V10 · 0:13–0:43)_
+- [x] **7.2 Operator ke inputs** — Frames used (target se 1–2 upar-neeche ho sakti) aur task ke against packets bane. _(source: V10 · 0:55–1:21)_
+- [x] **7.3 Rejected bunch apne aap** — Task ke frames khatam hone par: (frames × moti/frame − packets × moti/packet) ÷ 1,200. _(source: V10 · 1:21–1:48)_
+- [x] **7.4 Owner tab mein operator ka input** — Kis operator ne kis task par kitne frames, kitne packets; task ka progress. _(source: V11 · 0:00–0:16)_
+
+> **Status:** v14.6 mein bana (26 Nov) · `releases/v14.6-daily-entry/` · dono tareeke (packet bhara = owner ka, khaali = purana), reject bunch → Waste "Coating reject".
 
 ## 8. Contractor aur workers
 

@@ -62,3 +62,9 @@ a.btn{text-decoration:none}
 #ctpki .tg14{margin-top:2px;padding-top:4px;border-top:1px dashed color-mix(in srgb,var(--gold) 55%,var(--line));color:var(--ink)}
 .sumbox .tot14{font-size:15px;color:var(--gold-ink)}
 .tgt14{display:flex;align-items:flex-start;gap:6px;flex-wrap:nowrap;color:var(--ink)!important}.tgt14>svg{flex:none;margin-top:3px}.tgt14>span{min-width:0}
+/* ===== v14.6 · daily entry (Section 7) ===== */
+.pkinfo.rj14{min-height:auto;align-content:start}
+.pkinfo.rj14[hidden]{display:none}
+.pkinfo.rj14 .tg14{margin-top:2px;padding-top:4px;border-top:1px dashed color-mix(in srgb,var(--gold) 55%,var(--line));color:var(--ink)}
+.pkinfo.rj14 .bad14{color:var(--bad);font-weight:600}
+.tsum14{color:var(--ink)!important}
