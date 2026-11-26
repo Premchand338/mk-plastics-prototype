@@ -2,6 +2,10 @@
 
 Clickable prototype of an inventory + production app for MK Plastics / Beads Bazaar (plastic bead maker, Bhiwandi). Owner: Mahebub bhai (father); business run by his son Zahid bhai, who gives the reviews. Consultant: Premchand. UI language is Hinglish by default, with Hindi (Devanagari) and English toggles.
 
+## Working with Premchand
+
+- Ask every question (in chat and in question dialogs) in **Hinglish**, short and simple, so it can be forwarded to Zahid bhai as is.
+
 ## Stack and how it runs
 
 - Plain HTML + CSS + vanilla JS. No framework, no bundler, no server. `index.html` loads `css/*.css` and then `js/*.js` as **classic scripts in a fixed order**. They all share one global scope.
