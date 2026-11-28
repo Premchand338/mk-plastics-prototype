@@ -5,8 +5,8 @@ Banane ka tarika: `npm test` pass → `node tools/release.js v14.N slug` → us 
 
 | Version | Date | Section | Folder · link | Status |
 |---|---|---|---|---|
-| v14.7 | 26 Nov 2026 | 5 · Line routing (test se pakka) + owner ke task box (Q6 ke liye) + no-spec return bug fix | [v14.7-routing-task-boxes](v14.7-routing-task-boxes/) | Bana · link abhi share nahi |
-| v14.6 | 26 Nov 2026 | 7 · Roz ki entry (work date, frames + packet, reject bunch → waste, owner tab) | [v14.6-daily-entry](v14.6-daily-entry/) · [link](https://claude.ai/artifact/3b81iMAGmvTXbEhwSSz414) | Owner test ke liye taiyaar |
+| v14.7 | 26 Nov 2026 | 5 · Line routing (test se pakka) + owner ke task box (Q6 ke liye) + no-spec return bug fix | [v14.7-routing-task-boxes](v14.7-routing-task-boxes/) · [link](https://claude.ai/artifact/3b81iMAGmvTXbEhwSSz414) | Link par (28 Nov) · owner test baaki |
+| v14.6 | 26 Nov 2026 | 7 · Roz ki entry (work date, frames + packet, reject bunch → waste, owner tab) | [v14.6-daily-entry](v14.6-daily-entry/) | v14.7 mein shaamil |
 | v14.5 | 26 Nov 2026 | 6 · Packet se frame (exact P2 + allowance 2.8, target) | [v14.5-packets-frames](v14.5-packets-frames/) | v14.6 mein shaamil |
 | v14.4 | 26 Nov 2026 | 3 + 4 · Karigar return slip (grade, dhaga, cut) + Dhaga stock | [v14.4-karigar-return-dhaga](v14.4-karigar-return-dhaga/) | v14.5 mein shaamil |
 | v14.3 | 26 Nov 2026 | 2 · Karigar ko pirai (2.1–2.4): spec master, challan, frame / guchha | [v14.3-pirai](v14.3-pirai/) | v14.4 mein shaamil |
