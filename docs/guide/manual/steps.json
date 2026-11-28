@@ -1,0 +1,524 @@
+{
+ "ts": 1795867528032,
+ "cases": [
+  {
+   "id": "TC1",
+   "title": "Pearl order: raw material se bill tak",
+   "goal": "Ek order ka poora safar: moulding → karigar (pirai) → coating task → roz ki entry → dispatch (do rang mein se ek) → bill baad mein.",
+   "who": "Owner, Vinod (M1), Salman (P1)",
+   "steps": [
+    {
+     "n": 1,
+     "who": "—",
+     "do": "App kholo. Upar dark bar mein <b>Zero reset</b> → <b>Haan, zero karo</b>.",
+     "see": "Login screen. Saara data zero.",
+     "actual": "",
+     "pass": true,
+     "shot": null
+    },
+    {
+     "n": 2,
+     "who": "Owner",
+     "do": "Login: mobile <b>9800000001</b> → <b>Aage badho</b> → PIN <b>1111</b>.",
+     "see": "Home: \"Aaj ka control room\".",
+     "actual": "",
+     "pass": true,
+     "shot": null
+    },
+    {
+     "n": 3,
+     "who": "Owner",
+     "do": "Menu <b>Inward</b> → button <b>Inward</b> → Material <b>GPPS 206 Semi (kg)</b> · Bill no. <b>B-1</b> · Kitna aaya <b>300</b> → <b>Save</b>.",
+     "see": "GPPS 206 Semi: 300 kg stock mein.",
+     "actual": "300",
+     "pass": true,
+     "shot": null
+    },
+    {
+     "n": 4,
+     "who": "Owner",
+     "do": "Menu <b>Tasks</b> → <b>Moulding task</b> → Machine <b>M1</b> · Line <b>Pearl</b> · Raw material <b>GPPS 206 Semi</b> · Size <b>3MM</b> · Shape <b>Round</b> · Grade <b>SR</b> · Target <b>100</b> kg → <b>Task do</b>.",
+     "see": "Task #1 M1 par (Pearl line).",
+     "actual": "M1 · P",
+     "pass": true,
+     "shot": null
+    },
+    {
+     "n": 5,
+     "who": "Vinod",
+     "do": "<b>Logout</b> → <b>← Doosra number</b> → <b>9800000020</b> → PIN <b>3320</b> → <b>Shift Shuru</b>.",
+     "see": "Vinod ki screen, shift chalu.",
+     "actual": "true",
+     "pass": true,
+     "shot": null
+    },
+    {
+     "n": 6,
+     "who": "Vinod",
+     "do": "<b>Entry Daalo</b> → task #1 · Raw material liya <b>105</b> kg · Achha maal <b>100</b> kg → <b>Save</b>.",
+     "see": "Waste 5 kg apne aap. Entry admin ke paas approval ke liye.",
+     "actual": "pending",
+     "pass": true,
+     "shot": null
+    },
+    {
+     "n": 7,
+     "who": "Owner",
+     "do": "<b>Logout</b> → <b>← Doosra number</b> → owner login → menu <b>Approval</b> → Vinod ki entry par <b>Approve</b>.",
+     "see": "Moulded beads 100 kg stock mein (Pearl).",
+     "actual": "100",
+     "pass": true,
+     "shot": null
+    },
+    {
+     "n": 8,
+     "who": "Owner",
+     "do": "Menu <b>Stock</b> → tab <b>Dhaga</b> → <b>Dhaga aaya</b> → Type <b>1×2</b> · kitna <b>10</b> kg · note \"opening\" → <b>Stock mein jodo</b>.",
+     "see": "1×2 dhaga: 10.000 kg.",
+     "actual": "10",
+     "pass": true,
+     "shot": "TC1-01.jpg"
+    },
+    {
+     "n": 9,
+     "who": "Owner",
+     "do": "Menu <b>Karigar</b> → <b>Karigar ko bhejo</b> → Karigar <b>Tausif bhai</b> · Moulded bead <b>3MM Round · Semi (SR)</b> · Kitna <b>100</b> kg.",
+     "see": "Pirai spec apne aap: <b>3MM Semi · 30×2×100 = 6,000 moti</b>. Box: 30 ladi = 1 guchha · 2 guchha = 1 frame · andaazan <b>1,200 frame</b>.",
+     "actual": "Guchha kaise banana hai 3MM Semi · 60B 30 ladi = 1 guchha 2 guchha = 1 frame 60 ladi / frame 100 moti / ladi 6,000 moti / frame 1 frame = 6,000 moti = 5.00 bunch (1 bunch = 1,200 moti) · andaazan 1,200 frame wapas aayenge (100.0 kg × 60.00 bunch/kg)",
+     "pass": true,
+     "shot": "TC1-02.jpg"
+    },
+    {
+     "n": 10,
+     "who": "Owner",
+     "do": "<b>Bhejo + challan banao</b>.",
+     "see": "Job-work challan: \"Pirai kaise karni hai\" box (30 · 2 · 60 · 100 · 6,000).",
+     "actual": "MK Plastics Beads Bazaar · Bhiwandi, Mumbai 421302, Maharashtra GSTIN 27XXXXXXXXXX1Z0 (sample) DELIVERY CHALLAN · JOB WORK JW/26-27/0001 28/11/2026 Karigar (job worker) Tausif bhai Bhiwandi, Bhiwandi Maksad Job work: dhaage mein pirona Sec. 143 CGST Act · Rule 55 # VIVRAN HSN QTY ANDAAZIT KEEMAT 1 3MM Round · Semi (SR) Moulded beads, bina rang, bina dhaage · Pearl line 3926 100.0 kg ₹13,500 Pirai kaise karni hai 3MM Semi · 60B · P2 30 ladi = 1 guchha 2 guchha = 1 frame 60 ladi / frame 100 moti / ladi 6,000 moti / frame Andaazan 1,200 frame wapas · Wapas frame / guchha mein lena · 1 bunch = 1,200 moti Wapas kab tak 13/12/2026 Wapas kaise aayega Frame / guchha (moti + dhaaga) Chhoot 1.5% · ₹4/bunch Sample format hai, CA se confirm karein. MK Plastics ki taraf se Karigar ka sign",
+     "pass": true,
+     "shot": "TC1-03.jpg"
+    },
+    {
+     "n": 11,
+     "who": "Owner",
+     "do": "Challan band karo → Karigar page par job ke saamne <b>Wapas lo</b>. Bharo: Maal kisne liya <b>Salman</b> · Grade <b>1st</b> · Kitne frame aaye <b>301</b> · Kul wazan <b>107.53</b> kg · Dhaga type <b>1×2</b> (gram/kg 70 apne aap).",
+     "see": "Neeche: 301 frame = 18,06,000 moti = <b>1,505 bunch</b> · Dhaga 107.53 × 70 g = <b>7.527 kg</b> · 1×2 dhaga stock iske baad <b>2.473 kg</b> · Iske baad baaki <b>0.0 kg</b>.",
+     "actual": "301 frame = 18,06,000 moti 1,505 bunch Bead ka wazan (kul − dhaaga) 100.0 kg Loose + cut 0.0 kg Dhaga: 107.530 kg × 70 g 7.527 kg 1×2 dhaga stock iske baad 2.473 kg Iske baad baaki 0.0 kg",
+     "pass": true,
+     "shot": "TC1-04.jpg"
+    },
+    {
+     "n": 12,
+     "who": "Owner",
+     "do": "<b>Threaded maal aaya</b> → popup mein <b>Move to Pearl coating</b>.",
+     "see": "Lot 1,505 bunch Pearl coating mein (menu Coating → \"Coating mein\").",
+     "actual": "1505 cq",
+     "pass": true,
+     "shot": null
+    },
+    {
+     "n": 13,
+     "who": "Owner",
+     "do": "Menu <b>Orders</b> → <b>Naya order</b>. Party <b>Laxmi Lace Works · Mumbai</b>. Item <b>3. 3MM Semi · 60B</b> · Unit Pearl · Grade SR · Coating <b>Double</b>. Rang <b>Rani Gulabi</b>, packet <b>10</b>. <b>Aur rang</b> → <b>Green</b>, packet <b>10</b>.",
+     "see": "Slip no. <b>224</b> · Bhiwandi → Mumbai · Item 1: 20 packet · rate ₹10.4.",
+     "actual": "224 10.4 20 packet",
+     "pass": true,
+     "shot": "TC1-05.jpg"
+    },
+    {
+     "n": 14,
+     "who": "Owner",
+     "do": "<b>Slip save karo</b>.",
+     "see": "Popup: dono rang ke saamne <b>Coating task do (10 packet · 100 frame)</b>.",
+     "actual": "Order #224 save ho gaya Laxmi Lace Works Ab aap tay karo: jo maal taiyaar hai uska bill banao, jo kam hai uske liye Pearl / Metalizing unit ko coating task do. 3MM Round Rani Gulabi · Semi · Double (SR) 10 packet = 500 bunch · taiyaar 0 bunch Coating task do (10 packet · 100 frame) 3MM Round Green · Semi · Double (SR) 10 packet = 500 bunch · taiyaar 0 bunch Coating task do (10 packet · 100 frame) Baad mein",
+     "pass": true,
+     "shot": "TC1-06.jpg"
+    },
+    {
+     "n": 15,
+     "who": "Owner",
+     "do": "Rani Gulabi ke saamne <b>Coating task do</b> → Machine <b>P1 · Salman</b> rehne do → <b>Task do</b>.",
+     "see": "Form mein: Kitne packet <b>10</b> → Target <b>100 frame</b> (3MM Semi: 1 packet = 10 frame exact; allowance abhi nahi).",
+     "actual": "10 100 P1",
+     "pass": true,
+     "shot": null
+    },
+    {
+     "n": 16,
+     "who": "Salman",
+     "do": "<b>Logout</b> → <b>← Doosra number</b> → <b>9800000022</b> → PIN <b>3322</b> → <b>Shift Shuru</b> → <b>Entry Daalo</b>. Work date <b>kal</b> (pehle se). Task #2 · Frames use hue <b>105</b> · Kitne packet bane <b>10</b>.",
+     "see": "Hisaab box: 105 × 6,000 = 6,30,000 moti · 10 × 60,000 = 6,00,000 · Reject = <b>25 bunch</b> → Waste. Task: Pehle 0 + aaj 105.",
+     "actual": "Hisaab (owner ka tareeka) 105 frame × 6,000 moti = 6,30,000 moti 10 packet × 60,000 moti = 6,00,000 moti Reject = 30,000 ÷ 1,200 = 25 bunch → Waste (Coating reject) Stock mein: 10 × 50 = 500 bunch (approval ke baad)",
+     "pass": true,
+     "shot": "TC1-07.jpg"
+    },
+    {
+     "n": 17,
+     "who": "Salman",
+     "do": "<b>Save karo</b>.",
+     "see": "Entry owner ke paas approval ke liye.",
+     "actual": "true 500 25",
+     "pass": true,
+     "shot": null
+    },
+    {
+     "n": 18,
+     "who": "Owner",
+     "do": "Owner login → menu <b>Coating</b> (badge 1) → tab <b>Final approval</b> → Salman ki entry par <b>Approve</b>. (Coating ki entry Approval page par nahi, yahan aati hai.)",
+     "see": "Stock → \"Dispatch ke liye taiyaar\": 3MM Round Rani Gulabi <b>500 bunch</b>. Waste page: <b>Coating reject</b> 25 bunch.",
+     "actual": "500 25",
+     "pass": true,
+     "shot": null
+    },
+    {
+     "n": 19,
+     "who": "Owner",
+     "do": "Menu <b>Orders</b> → tab <b>Party-wise</b>.",
+     "see": "Laxmi Lace Works · Slip #224: Rani Gulabi Order 10 · Bane <b>10</b> · Baaki ✓ ; Green Order 10 · Bane 0 · Baaki <b>10</b>.",
+     "actual": "1Slip #224 28 Nov · Bhiwandi → Mumbai Maal ka intezaar ITEM RANG ORDER BANE BAAKI 3MM Round · SR · Double Rani Gulabi 10 10 3MM Round · SR · Double Green 10 0 10 Order kholo",
+     "pass": true,
+     "shot": "TC1-08.jpg"
+    },
+    {
+     "n": 20,
+     "who": "Owner",
+     "do": "<b>Order kholo</b> → <b>Dispatch karo</b>. Rani Gulabi <b>10</b> packet (Green 0) · Gaadi number <b>MH04 AB 1234</b> · Bill kab? <b>Bill baad mein</b> → <b>Dispatch karo</b>.",
+     "see": "Stock Rani Gulabi 500 → <b>0</b>. Orders page par <b>\"Bill banana baaki\"</b>: Slip #224, aaj dispatch.",
+     "actual": "0 1",
+     "pass": true,
+     "shot": "TC1-09.jpg"
+    },
+    {
+     "n": 21,
+     "who": "Owner",
+     "do": "Orders page par \"Bill banana baaki\" mein <b>Bill banao</b> → GST tax invoice · Rate <b>10.4</b> (slip se) → <b>Bill banao</b>.",
+     "see": "Invoice <b>MK/26-27/0001</b> · 10 packet × 50 bunch × ₹10.40 = ₹5,200 + CGST 9% + SGST 9% = <b>₹6,136</b>. Neeche: Dispatch (aaj) · Bill bana (aaj). Buttons: WhatsApp · PDF download.",
+     "actual": "MK/26-27/0001 6136",
+     "pass": true,
+     "shot": "TC1-10.jpg"
+    }
+   ]
+  },
+  {
+   "id": "TC2",
+   "title": "Karigar slip (P3): grade, dhaga, cut, alert",
+   "goal": "Owner ki photo P3 wali slip: Tausif · 3 No Semi · 40.400 kg · cut 0.800 · receiver Salman. Grade zaroori, dhaga apne aap, cut waste mein, dhaga kam ho toh alert.",
+   "who": "Owner, Vinod (M1)",
+   "steps": [
+    {
+     "n": 1,
+     "who": "—",
+     "do": "App kholo. Upar dark bar mein <b>Zero reset</b> → <b>Haan, zero karo</b>.",
+     "see": "Login screen. Saara data zero.",
+     "actual": "",
+     "pass": true,
+     "shot": null
+    },
+    {
+     "n": 2,
+     "who": "Owner",
+     "do": "Login: mobile <b>9800000001</b> → <b>Aage badho</b> → PIN <b>1111</b>.",
+     "see": "Home: \"Aaj ka control room\".",
+     "actual": "",
+     "pass": true,
+     "shot": null
+    },
+    {
+     "n": 3,
+     "who": "Owner",
+     "do": "Menu <b>Inward</b> → button <b>Inward</b> → Material <b>GPPS 206 Semi (kg)</b> · Bill no. <b>B-1</b> · Kitna aaya <b>300</b> → <b>Save</b>.",
+     "see": "GPPS 206 Semi: 300 kg stock mein.",
+     "actual": "300",
+     "pass": true,
+     "shot": null
+    },
+    {
+     "n": 4,
+     "who": "Owner",
+     "do": "Menu <b>Tasks</b> → <b>Moulding task</b> → Machine <b>M1</b> · Line <b>Pearl</b> · Raw material <b>GPPS 206 Semi</b> · Size <b>3MM</b> · Shape <b>Round</b> · Grade <b>SR</b> · Target <b>50</b> kg → <b>Task do</b>.",
+     "see": "Task #1 M1 par (Pearl line).",
+     "actual": "M1 · P",
+     "pass": true,
+     "shot": null
+    },
+    {
+     "n": 5,
+     "who": "Vinod",
+     "do": "<b>Logout</b> → <b>← Doosra number</b> → <b>9800000020</b> → PIN <b>3320</b> → <b>Shift Shuru</b>.",
+     "see": "Vinod ki screen, shift chalu.",
+     "actual": "true",
+     "pass": true,
+     "shot": null
+    },
+    {
+     "n": 6,
+     "who": "Vinod",
+     "do": "<b>Entry Daalo</b> → task #1 · Raw material liya <b>52</b> kg · Achha maal <b>50</b> kg → <b>Save</b>.",
+     "see": "Waste 2 kg apne aap. Entry admin ke paas approval ke liye.",
+     "actual": "pending",
+     "pass": true,
+     "shot": null
+    },
+    {
+     "n": 7,
+     "who": "Owner",
+     "do": "<b>Logout</b> → <b>← Doosra number</b> → owner login → menu <b>Approval</b> → Vinod ki entry par <b>Approve</b>.",
+     "see": "Moulded beads 50 kg stock mein (Pearl).",
+     "actual": "50",
+     "pass": true,
+     "shot": null
+    },
+    {
+     "n": 8,
+     "who": "Owner",
+     "do": "Menu <b>Stock</b> → tab <b>Dhaga</b> → <b>Dhaga aaya</b> → Type <b>1×2</b> · kitna <b>5</b> kg → <b>Stock mein jodo</b>.",
+     "see": "1×2: 5.000 kg.",
+     "actual": "5",
+     "pass": true,
+     "shot": null
+    },
+    {
+     "n": 9,
+     "who": "Owner",
+     "do": "Usi page par <b>Type / reorder</b> → 1×2 wali line mein Reorder <b>3</b> → <b>Save karo</b>.",
+     "see": "1×2 card par \"reorder 3.000 kg\". Abhi alert nahi (5 > 3).",
+     "actual": "3 false",
+     "pass": true,
+     "shot": null
+    },
+    {
+     "n": 10,
+     "who": "Owner",
+     "do": "Menu <b>Karigar</b> → <b>Karigar ko bhejo</b> → <b>Tausif bhai</b> · <b>3MM Round · Semi (SR)</b> · <b>45</b> kg → <b>Bhejo + challan banao</b> → challan band karo (X).",
+     "see": "Karigar page: Tausif bhai ke paas 45.0 kg.",
+     "actual": "45",
+     "pass": true,
+     "shot": null
+    },
+    {
+     "n": 11,
+     "who": "Owner",
+     "do": "Job ke saamne <b>Wapas lo</b>. Slip jaisa bharo: Maal kisne liya <b>Salman</b> · Kitne frame aaye <b>120</b> · Kul wazan <b>40.400</b> · Dhaga type <b>1×2</b> · Cut <b>0.800</b>. <b>Grade mat chuno</b> → <b>Threaded maal aaya</b>.",
+     "see": "Save <b>nahi</b> hota. Laal likha: \"Grade chuno (1st / 2nd / 3rd). Bina grade save nahi hoga.\"",
+     "actual": "0 Grade chuno (1st / 2nd / 3rd). Bina grade save nahi hoga.",
+     "pass": true,
+     "shot": "TC2-01.jpg"
+    },
+    {
+     "n": 12,
+     "who": "Owner",
+     "do": "Ab Grade <b>1st</b> chuno.",
+     "see": "Neeche hisaab: 120 frame = 7,20,000 moti = 600 bunch · Dhaga 40.400 × 70 g = <b>2.828 kg</b> · 1×2 stock iske baad <b>2.172 kg</b> · Cut → waste (<b>Semi · 1st grade</b>) 0.800 kg.",
+     "actual": "120 frame = 7,20,000 moti 600 bunch Bead ka wazan (kul − dhaaga) 37.6 kg Loose + cut 0.8 kg Dhaga: 40.400 kg × 70 g 2.828 kg 1×2 dhaga stock iske baad 2.172 kg Cut → waste (Semi · 1st grade) 0.800 kg Iske baad baaki 6.6 kg",
+     "pass": true,
+     "shot": "TC2-02.jpg"
+    },
+    {
+     "n": 13,
+     "who": "Owner",
+     "do": "<b>Threaded maal aaya</b> → popup mein <b>Baad mein</b>.",
+     "see": "Maal 37.572 kg (40.400 − 2.828). Dhaga 2.172 kg.",
+     "actual": "37.572 2.172",
+     "pass": true,
+     "shot": null
+    },
+    {
+     "n": 14,
+     "who": "Owner",
+     "do": "Menu <b>Stock</b> → tab <b>Dhaga</b>. Phir upar <b>bell</b> (ghanti).",
+     "see": "Dhaga tab par badge; 1×2 card <b>2.172 kg · \"kam hai\"</b>. Bell mein (Stock group): \"1×2 dhaga kam: 2.172 kg\".",
+     "actual": "1×2 2.172 kg reorder 3.000 kg kam hai | 1×2 dhaga kam: 2.172 kg",
+     "pass": true,
+     "shot": "TC2-03.jpg"
+    },
+    {
+     "n": 15,
+     "who": "Owner",
+     "do": "Menu <b>Waste</b> → neeche dekho.",
+     "see": "\"Semi waste\" <b>2.800 kg</b> (2 kg moulding + 0.800 cut). \"Pirai ka cut · grade ke hisaab se\": Semi · 1st grade <b>0.800 kg</b>.",
+     "actual": "Prototype Logout Online Hinglish Zero reset MK Plastics BEADS BAZAAR ROZ KA KAAM Home Tasks Approval Karigar Coating 1 Dispatch MAAL AUR STOCK Inward 1 Stock Waste Rate list BIKRI AUR PAISA Orders Khaata Kharcha Reports ADMIN Record Team Guide O Owner Admin · saari units ADMIN · SAARI UNITS Waste Online 18 Kul waste abhi 2.8 kg Is mahine bana 2.0 kg Regrind hua (kul) 0.0 kg Type ke hisaab se waste Moulding entry approve hote hi waste yahan judta hai, raw material ke type ke hisaab se. TYPE ABHI STOCK IS MAHINE BANA REGRIND HUA Semi waste 2.8 kg 2.0 kg 0.0 kg Regrind Pirai ka cut · grade ke hisaab se Karigar se wapas aaya cut (jo moti pir nahi saki). Upar type ke waste mein bhi juda hai. TYPE 1ST GRADE 2ND GRADE 3RD GRADE KUL Semi waste 0.800 kg – – 0.800 kg",
+     "pass": true,
+     "shot": "TC2-04.jpg"
+    },
+    {
+     "n": 16,
+     "who": "Owner",
+     "do": "Menu <b>Karigar</b>.",
+     "see": "Tausif bhai ki line: Frame aaye <b>120</b> (600 bunch) · <b>1st · dhaga 2.828 kg · cut 0.800 kg</b> · baaki ~6.6 kg.",
+     "actual": "BEAD KARIGAR BHEJA FRAME AAYE WAZAN (DHAAGE KE SAATH) BAAKI HAALAT 3MM Round · Semi (SR) Pearl line · 30×2×100 Tausif bhai JW/26-27/0001 45.0 kg 28 Nov 120 600 bunch 40.4 kg 1st · dhaga 2.828 kg · cut 0.800 kg 6.6 kg 0 din Wapas lo Challan",
+     "pass": true,
+     "shot": "TC2-05.jpg"
+    },
+    {
+     "n": 17,
+     "who": "Owner",
+     "do": "Menu <b>Rate list</b> → neeche <b>Dhaga (gram / kg)</b> → line 3 \"3MM Semi\".",
+     "see": "Dhaga type ab <b>1×2</b> (return par \"yaad rakho\" se). Gram / kg 70, \"confirm baaki\" (Q3d).",
+     "actual": "1×2",
+     "pass": true,
+     "shot": null
+    }
+   ]
+  },
+  {
+   "id": "TC3",
+   "title": "Pehla slip pehle, turant bill, Metalizing ka raasta",
+   "goal": "Do party ne same maal maanga, stock ek ke liye kaafi: purana slip pehle. Dispatch ke saath turant bill (IGST), WhatsApp + PDF. Phir Metalizing ka maal sirf MZ1 ko.",
+   "who": "Owner, Vinod (M1)",
+   "steps": [
+    {
+     "n": 1,
+     "who": "—",
+     "do": "App kholo. Upar dark bar mein <b>Zero reset</b> → <b>Haan, zero karo</b>.",
+     "see": "Login screen. Saara data zero.",
+     "actual": "",
+     "pass": true,
+     "shot": null
+    },
+    {
+     "n": 2,
+     "who": "Owner",
+     "do": "Login: mobile <b>9800000001</b> → <b>Aage badho</b> → PIN <b>1111</b>.",
+     "see": "Home: \"Aaj ka control room\".",
+     "actual": "",
+     "pass": true,
+     "shot": null
+    },
+    {
+     "n": 3,
+     "who": "Owner",
+     "do": "Upar <b>Stock jodo</b> → <b>Dispatch ke liye taiyaar</b> → Unit <b>Pearl line</b> → Item <b>+ Naya product</b>: <b>3. 3MM Semi · 60B</b> · <b>SR</b> · rang <b>Off White</b> · <b>Double</b> · kitna <b>500</b> bunch → Kyun <b>Opening stock</b> → <b>List mein daalo</b> → <b>Stock save karo</b>.",
+     "see": "Stock → \"Dispatch ke liye taiyaar\": 3MM Round Off White · Double <b>500 bunch</b> (= 10 packet).",
+     "actual": "500",
+     "pass": true,
+     "shot": null
+    },
+    {
+     "n": 4,
+     "who": "Owner",
+     "do": "Menu <b>Orders</b> → <b>Naya order</b> → Party <b>Shree Ganesh Garments · Surat</b> · Item <b>3. 3MM Semi · 60B</b> · <b>Double</b> · rang <b>Off White</b> · packet <b>8</b> → <b>Slip save karo</b> → popup <b>Baad mein</b>.",
+     "see": "Slip <b>#224</b> ban gaya.",
+     "actual": "224",
+     "pass": true,
+     "shot": null
+    },
+    {
+     "n": 5,
+     "who": "Owner",
+     "do": "Menu <b>Orders</b> → <b>Naya order</b> → Party <b>Noor Embroidery · Bhiwandi</b> · Item <b>3. 3MM Semi · 60B</b> · <b>Double</b> · rang <b>Off White</b> · packet <b>8</b> → <b>Slip save karo</b> → popup <b>Baad mein</b>.",
+     "see": "Slip <b>#225</b> ban gaya.",
+     "actual": "225",
+     "pass": true,
+     "shot": null
+    },
+    {
+     "n": 6,
+     "who": "Owner",
+     "do": "Orders page (tab <b>Sab</b>).",
+     "see": "Upar <b>1 · Slip #224</b> \"Ready to dispatch\" 8 / 8 packet; neeche <b>2 · Slip #225</b> \"Maal ka intezaar\" 2 / 8 (stock pehle purane slip ko).",
+     "actual": "#224 ready · #225 waiting",
+     "pass": true,
+     "shot": "TC3-01.jpg"
+    },
+    {
+     "n": 7,
+     "who": "Owner",
+     "do": "Slip #224 kholo → <b>Dispatch karo</b> → packet 8 · Gaadi number <b>GJ05 XY 4321</b> · Bill kab? <b>Abhi bill banao</b> · <b>GST tax invoice</b> → <b>Dispatch + bill banao</b>.",
+     "see": "Invoice turant: <b>MK/26-27/0001</b> · 8 × 50 × ₹10.40 = ₹4,160 + <b>IGST 18% (Gujarat)</b> = <b>₹4,909</b>. Paper par Order slip 224 · Transport Bhiwandi → Surat · Dispatch (aaj, GJ05 XY 4321).",
+     "actual": "MK/26-27/0001 4909 true",
+     "pass": true,
+     "shot": "TC3-02.jpg"
+    },
+    {
+     "n": 8,
+     "who": "Owner",
+     "do": "Invoice par <b>WhatsApp</b> aur <b>PDF download</b> dekho (PDF: print → \"Save as PDF\").",
+     "see": "WhatsApp message: bill no., Shree Ganesh Garments, Slip 224, gaadi, Total ₹4,909. PDF mein sirf bill ka kaagaz.",
+     "actual": "https://wa.me/?text=*MK Plastics · Beads Bazaar*\nTax Invoice MK/26-27/0001 · 28/11/2026\nShree Ganesh Garments, Surat\nOrder slip 224 · Bhiwandi → Surat\nGaadi: GJ05 XY 4321\n\n• 3MM Round Off White · Semi · Double (SR): 8 packet · 400 bunch × ₹10.40 = ₹4,160.00\n\n*Total: ₹4,909*",
+     "pass": true,
+     "shot": null
+    },
+    {
+     "n": 9,
+     "who": "Owner",
+     "do": "Invoice band karo → Orders → tab <b>Party-wise</b>.",
+     "see": "Noor Embroidery · Slip #225: Bane 2 / 8 (stock 100 bunch bacha). Shree Ganesh: list se hat gaya (pura dispatch).",
+     "actual": "100 waiting",
+     "pass": true,
+     "shot": null
+    },
+    {
+     "n": 10,
+     "who": "Owner",
+     "do": "Menu <b>Inward</b> → button <b>Inward</b> → Material <b>Black PP (kg)</b> · Bill no. <b>B-1</b> · Kitna aaya <b>300</b> → <b>Save</b>.",
+     "see": "Black PP: 300 kg stock mein.",
+     "actual": "300",
+     "pass": true,
+     "shot": null
+    },
+    {
+     "n": 11,
+     "who": "Owner",
+     "do": "Menu <b>Tasks</b> → <b>Moulding task</b> → Machine <b>M1</b> · Line <b>Metalizing</b> · Raw material <b>Black PP</b> · Size <b>6MM</b> · Shape <b>Round</b> · Grade <b>SR</b> · Target <b>50</b> kg → <b>Task do</b>.",
+     "see": "Task #1 M1 par (Metalizing line).",
+     "actual": "M1 · Z",
+     "pass": true,
+     "shot": null
+    },
+    {
+     "n": 12,
+     "who": "Vinod",
+     "do": "<b>Logout</b> → <b>← Doosra number</b> → <b>9800000020</b> → PIN <b>3320</b> → <b>Shift Shuru</b>.",
+     "see": "Vinod ki screen, shift chalu.",
+     "actual": "true",
+     "pass": true,
+     "shot": null
+    },
+    {
+     "n": 13,
+     "who": "Vinod",
+     "do": "<b>Entry Daalo</b> → task #1 · Raw material liya <b>52</b> kg · Achha maal <b>50</b> kg → <b>Save</b>.",
+     "see": "Waste 2 kg apne aap. Entry admin ke paas approval ke liye.",
+     "actual": "pending",
+     "pass": true,
+     "shot": null
+    },
+    {
+     "n": 14,
+     "who": "Owner",
+     "do": "<b>Logout</b> → <b>← Doosra number</b> → owner login → menu <b>Approval</b> → Vinod ki entry par <b>Approve</b>.",
+     "see": "Moulded beads 50 kg stock mein (Metalizing).",
+     "actual": "50",
+     "pass": true,
+     "shot": null
+    },
+    {
+     "n": 15,
+     "who": "Owner",
+     "do": "Menu <b>Karigar</b> → <b>Karigar ko bhejo</b> → Moulded bead list mein <b>\"Metalizing line\"</b> ke neeche <b>6MM Round · Black PP (SR)</b> · <b>50</b> kg → <b>Bhejo + challan banao</b> → band karo.",
+     "see": "Pirai spec: \"spec nahi mila\" (Black PP P2 mein nahi) → theek, wapas lete waqt bunch seedha daalenge.",
+     "actual": "Z",
+     "pass": true,
+     "shot": null
+    },
+    {
+     "n": 16,
+     "who": "Owner",
+     "do": "<b>Wapas lo</b> → Grade <b>1st</b> · Bunch <b>400</b> · Kul wazan <b>50</b> · Dhaga type <b>1×2</b> · Dhaga gram / kg <b>20</b> → <b>Threaded maal aaya</b>.",
+     "see": "Popup: <b>Move to Metalizing</b> (Pearl nahi). Dhaga stock minus mein → bell mein laal alert (dhaga inward nahi kiya).",
+     "actual": "Threaded maal aa gaya 400 bunch · 50.0 kg Yeh maal Metalizing line ke raw material se bana hai, isliye Metalizing coating mein jaayega. Baad mein Move to Metalizing",
+     "pass": true,
+     "shot": "TC3-03.jpg"
+    },
+    {
+     "n": 17,
+     "who": "Owner",
+     "do": "<b>Move to Metalizing</b> → menu <b>Tasks</b> → <b>Coating task</b>. Machine <b>P1</b> dekho, phir <b>MZ1</b> chuno.",
+     "see": "P1: \"Pearl line · … (<b>0 lot</b> coating mein)\", lot list khaali. MZ1: \"Metalizing line · … (<b>1 lot</b>)\", lot <b>6MM Round · Black PP (SR) · 400 bunch</b>.",
+     "actual": "Metalizing line · sirf Metalizing raw material ka maal (1 lot coating mein) | 6MM Round · Black PP (SR) · 400 bunch",
+     "pass": true,
+     "shot": "TC3-04.jpg"
+    }
+   ]
+  }
+ ]
+}

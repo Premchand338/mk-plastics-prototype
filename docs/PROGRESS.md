@@ -96,6 +96,12 @@ Last updated: 26 Nov 2026 · Branch: `claude/bold-pasteur-hc1dru` · Checklist: 
 - Dobara banana: `npm run review` · `npm run guide` (cloud: `PW_CHROMIUM=/opt/pw-browsers/chromium`).
 - Review ka sujhaav: bell mein dhaga alert "Stock" group mein chhup jaata hai → alag group (owner se poochna).
 
+## Test checklist (28 Nov)
+
+- `docs/guide/MK-Plastics-Test-Checklist.pdf` (13 page): 3 test case Zero reset se, har step "kya karo / kya dikhna chahiye / ☐ / note", screenshots, result sheet. TC1 21, TC2 17, TC3 17 step; sab pehle app mein button ke naam se chala ke check (55/55).
+- v14.7 file chahiye (TC3 ka Black PP return grade fix v14.7 mein hai). Dobara banana: `npm run checklist`.
+- Testing mein mila: coating entry ka approval **Coating → Final approval** tab par hota hai (Approval page par nahi) — checklist mein likha.
+
 ## Khule sawaal (owner)
 
 Q1–Q11 checklist ke end mein. Sabse zaroori abhi: **Q10** (rate slip par bhi?), **Q11** (bill dispatch se pehle ya baad?), **Q1/Q3** (P2 register ke unclear rows, Section 2 ke liye).
